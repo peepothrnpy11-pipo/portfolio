@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theeranat Penyai | Junior Frontend Developer</title>
+    <meta name="description" content="Theeranat Penyai (PIPO) - Junior Frontend & Flutter Developer based in Bangkok, Thailand.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <header class="navbar" id="navbar">
+        <div class="container navbar__container">
+            <a href="#home" class="navbar__logo">PIPO<span>.</span></a>
+            <nav class="navbar__menu" id="navMenu" aria-label="Main navigation">
+                <ul class="navbar__list">
+                    <li><a href="#home"       class="navbar__link active">Home</a></li>
+                    <li><a href="#about"      class="navbar__link">About</a></li>
+                    <li><a href="#skills"     class="navbar__link">Skills</a></li>
+                    <li><a href="#experience" class="navbar__link">Experience</a></li>
+                    <li><a href="#projects"   class="navbar__link">Projects</a></li>
+                    <li><a href="#contact"    class="navbar__link">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="navbar__hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ===== HERO SECTION ===== -->
+        <section class="hero" id="home">
+            <div class="hero__bg-shape"></div>
+            <div class="container hero__container">
+
+                <!-- Left: Text Content -->
+                <div class="hero__content">
+                    <p class="hero__greeting">Hello, I'm</p>
+                    <h1 class="hero__name">Theeranat <span>Penyai</span></h1>
+                    <div class="hero__title-wrapper">
+                        <span class="hero__title" id="typingText"></span><span class="hero__cursor">|</span>
+                    </div>
+                    <p class="hero__description">
+                        นักพัฒนา Frontend และ Flutter ระดับเริ่มต้น สนใจสร้างเว็บไซต์และแอปพลิเคชัน
+                        ให้ใช้งานง่าย พร้อมเรียนรู้งานจริงและพัฒนาทักษะใหม่ ๆ อยู่เสมอ
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#" class="btn btn--primary">
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                        <a href="#contact" class="btn btn--outline">
+                            <i class="fas fa-envelope"></i> Contact Me
+                        </a>
+                    </div>
+                    <div class="hero__stats">
+                        <div class="hero__stat">
+                            <span class="hero__stat-number" data-count="1">0</span><span class="hero__stat-plus">+</span>
+                            <span class="hero__stat-label">Years Exp.</span>
+                        </div>
+                        <div class="hero__stat-divider"></div>
+                        <div class="hero__stat">
+                            <span class="hero__stat-number" data-count="4">0</span><span class="hero__stat-plus">+</span>
+                            <span class="hero__stat-label">Projects</span>
+                        </div>
+                        <div class="hero__stat-divider"></div>
+                        <div class="hero__stat">
+                            <span class="hero__stat-number" data-count="12">0</span><span class="hero__stat-plus">+</span>
+                            <span class="hero__stat-label">Tools</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Profile Image -->
+                <div class="hero__image-wrapper">
+                    <div class="hero__image-ring"></div>
+                    <div class="hero__image">
+                        <img src="https://placehold.co/400x400/7B0D1E/FFFFFF?text=PIPO&font=poppins" alt="PIPO Profile Photo">
+                    </div>
+                    <div class="hero__badge hero__badge--1">
+                        <div class="hero__badge-icon"><i class="fas fa-code"></i></div>
+                        <span>Frontend Dev</span>
+                    </div>
+                    <div class="hero__badge hero__badge--2">
+                        <div class="hero__badge-icon"><i class="fas fa-palette"></i></div>
+                        <span>UX/UI Designer</span>
+                    </div>
+                    <div class="hero__badge hero__badge--3">
+                        <div class="hero__badge-icon"><i class="fas fa-mobile-screen-button"></i></div>
+                        <span>Mobile Developer</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="hero__scroll">
+                <a href="#about" aria-label="Scroll to About">
+                    <div class="hero__scroll-mouse"><div class="hero__scroll-wheel"></div></div>
+                    <span>Scroll Down</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- ===== ABOUT SECTION ===== -->
+        <section class="about section-padding bg-light" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Who I Am</span>
+                    <h2 class="section-title">About <span>Me</span></h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="about__grid">
+                    <!-- Profile Image -->
+                    <div class="about__image-col">
+                        <div class="about__image-frame">
+                            <img src="https://placehold.co/400x480/7B0D1E/FFFFFF?text=Profile&font=poppins" alt="About PIPO">
+                            <div class="about__image-border"></div>
+                        </div>
+                        <div class="about__exp-badge">
+                            <span class="about__exp-num">1+</span>
+                            <span class="about__exp-text">Years of<br>Experience</span>
+                        </div>
+                    </div>
+                    <!-- Bio Content -->
+                    <div class="about__content">
+                        <h3 class="about__subtitle">Junior Frontend & Flutter Developer</h3>
+                        <p class="about__desc">
+                            สวัสดีครับ! ผมชื่อ <strong>Theeranat Penyai (PIPO)</strong> นักพัฒนา Frontend และ Flutter
+                            ระดับเริ่มต้น มีความรู้พื้นฐานด้าน HTML, CSS และ Dart สนใจพัฒนาเว็บไซต์และ
+                            แอปพลิเคชันให้ใช้งานง่ายและตอบโจทย์ผู้ใช้จริง
+                        </p>
+                        <p class="about__desc">
+                            ผมพร้อมเรียนรู้งานจริง พัฒนาทักษะใหม่ ๆ อยู่เสมอ และทำงานร่วมกับทีมได้ดี
+                            มุ่งมั่นที่จะเติบโตเป็นนักพัฒนาที่ส่งมอบงานคุณภาพ
+                        </p>
+                        <div class="about__info-grid">
+                            <div class="about__info-item">
+                                <i class="fas fa-user"></i>
+                                <div>
+                                    <span class="info-label">ชื่อเล่น</span>
+                                    <span class="info-value">PIPO</span>
+                                </div>
+                            </div>
+                            <div class="about__info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <span class="info-label">ที่อยู่</span>
+                                    <span class="info-value">กรุงเทพ, ไทย</span>
+                                </div>
+                            </div>
+                            <div class="about__info-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <span class="info-label">อีเมล</span>
+                                    <span class="info-value">theeranat.penyai14@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="about__info-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <span class="info-label">โทรศัพท์</span>
+                                    <span class="info-value">094-360-5112</span>
+                                </div>
+                            </div>
+                            <div class="about__info-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div>
+                                    <span class="info-label">การศึกษา</span>
+                                    <span class="info-value">IT · มรภ.เชียงใหม่</span>
+                                </div>
+                            </div>
+                            <div class="about__info-item">
+                                <i class="fab fa-line"></i>
+                                <div>
+                                    <span class="info-label">LINE</span>
+                                    <span class="info-value">teeranat_14</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn--primary">
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SKILLS SECTION ===== -->
+        <section class="skills section-padding bg-white" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">What I Know</span>
+                    <h2 class="section-title">My <span>Skills</span></h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="skills__grid">
+                    <!-- Skill Bars -->
+                    <div class="skills__bars-col">
+                        <h3 class="skills__col-title">Technical Proficiency</h3>
+                        <p class="skills__col-desc">
+                            ทักษะเชิงเทคนิคที่ผมใช้งานอยู่เป็นประจำในการพัฒนาโปรเจกต์จริง
+                        </p>
+                        <div class="skill-bars" id="skillBars">
+                            <div class="skill-bar">
+                                <div class="skill-bar__header">
+                                    <span class="skill-bar__name">HTML5 / CSS3</span>
+                                    <span class="skill-bar__pct">80%</span>
+                                </div>
+                                <div class="skill-bar__track">
+                                    <div class="skill-bar__fill" data-width="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar__header">
+                                    <span class="skill-bar__name">JavaScript</span>
+                                    <span class="skill-bar__pct">70%</span>
+                                </div>
+                                <div class="skill-bar__track">
+                                    <div class="skill-bar__fill" data-width="70"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar__header">
+                                    <span class="skill-bar__name">React / Next.js</span>
+                                    <span class="skill-bar__pct">68%</span>
+                                </div>
+                                <div class="skill-bar__track">
+                                    <div class="skill-bar__fill" data-width="68"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar__header">
+                                    <span class="skill-bar__name">Flutter (Dart)</span>
+                                    <span class="skill-bar__pct">72%</span>
+                                </div>
+                                <div class="skill-bar__track">
+                                    <div class="skill-bar__fill" data-width="72"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar__header">
+                                    <span class="skill-bar__name">Tailwind / Bootstrap</span>
+                                    <span class="skill-bar__pct">75%</span>
+                                </div>
+                                <div class="skill-bar__track">
+                                    <div class="skill-bar__fill" data-width="75"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar__header">
+                                    <span class="skill-bar__name">Git / GitHub</span>
+                                    <span class="skill-bar__pct">70%</span>
+                                </div>
+                                <div class="skill-bar__track">
+                                    <div class="skill-bar__fill" data-width="70"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Skill Cards -->
+                    <div class="skills__cards-col">
+                        <h3 class="skills__col-title">Tools & Technologies</h3>
+                        <div class="skill-groups">
+
+                            <div class="skill-group">
+                                <h4 class="skill-group__title"><i class="fas fa-code"></i> Frontend</h4>
+                                <div class="skill-cards">
+                                    <div class="skill-card">
+                                        <div class="skill-card__icon"><i class="fab fa-html5"></i></div>
+                                        <span class="skill-card__name">HTML5</span>
+                                    </div>
+                                    <div class="skill-card">
+                                        <div class="skill-card__icon"><i class="fab fa-css3-alt"></i></div>
+                                        <span class="skill-card__name">CSS3</span>
+                                    </div>
+                                    <div class="skill-card">
+                                        <div class="skill-card__icon"><i class="fab fa-js"></i></div>
+                                        <span class="skill-card__name">JavaScript</span>
+                                    </div>
+                                    <div class="skill-card">
+                                        <div class="skill-card__icon"><i class="fab fa-bootstrap"></i></div>
+                                        <span class="skill-card__name">Bootstrap</span>
+                                    </div>
+                                    <div class="skill-card">
+                                        <div class="skill-card__icon"><i class="fas fa-wind"></i></div>
+                                        <span class="skill-card__name">Tailwind</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-group">
+                                <h4 class="skill-group__title"><i class="fas fa-cubes"></i> Frameworks</h4>
+                                <div class="skill-cards">
+                                    <div class="skill-card">
+                                        <div class="skill-card__icon"><i class="fab fa-react"></i></div>
+                                        <span class="skill-card__name">React</span>
+                                    </div>
+                                    <div class="skill-card">
+                                        <div class="skill-card__icon"><i class="fas fa-layer-group"></i></div>
+                                        <span class="skill-card__name">Next.js</span>
+                                    </div>
+                                    <div class="skill-card">
+                                        <div class="skill-card__icon"><i class="fas fa-mobile-screen-button"></i></div>
+                                        <span class="skill-card__name">Flutter</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-group">
+                                <h4 class="skill-group__title"><i class="fas fa-screwdriver-wrench"></i> Tools</h4>
+                                <div class="skill-cards">
+                                    <div class="skill-card">
+                                        <div class="skill-card__icon"><i class="fab fa-figma"></i></div>
+                                        <span class="skill-card__name">Figma</span>
+                                    </div>
+                                    <div class="skill-card">
+                                        <div class="skill-card__icon"><i class="fas fa-file-code"></i></div>
+                                        <span class="skill-card__name">VS Code</span>
+                                    </div>
+                                    <div class="skill-card">
+                                        <div class="skill-card__icon"><i class="fab fa-git-alt"></i></div>
+                                        <span class="skill-card__name">Git</span>
+                                    </div>
+                                    <div class="skill-card">
+                                        <div class="skill-card__icon"><i class="fab fa-docker"></i></div>
+                                        <span class="skill-card__name">Docker</span>
+                                    </div>
+                                    <div class="skill-card">
+                                        <div class="skill-card__icon"><i class="fas fa-server"></i></div>
+                                        <span class="skill-card__name">Navicat</span>
+                                    </div>
+                                    <div class="skill-card">
+                                        <div class="skill-card__icon"><i class="fas fa-scissors"></i></div>
+                                        <span class="skill-card__name">CapCut</span>
+                                    </div>
+                                    <div class="skill-card">
+                                        <div class="skill-card__icon"><i class="fas fa-diagram-project"></i></div>
+                                        <span class="skill-card__name">n8n</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-group">
+                                <h4 class="skill-group__title"><i class="fas fa-hard-drive"></i> Database</h4>
+                                <div class="skill-cards">
+                                    <div class="skill-card">
+                                        <div class="skill-card__icon"><i class="fas fa-database"></i></div>
+                                        <span class="skill-card__name">MySQL</span>
+                                    </div>
+                                    <div class="skill-card">
+                                        <div class="skill-card__icon"><i class="fas fa-fire"></i></div>
+                                        <span class="skill-card__name">Firebase</span>
+                                    </div>
+                                    <div class="skill-card">
+                                        <div class="skill-card__icon"><i class="fas fa-bolt"></i></div>
+                                        <span class="skill-card__name">Supabase</span>
+                                    </div>
+                                    <div class="skill-card">
+                                        <div class="skill-card__icon"><i class="fas fa-cloud"></i></div>
+                                        <span class="skill-card__name">Neon</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-group">
+                                <h4 class="skill-group__title"><i class="fas fa-wand-magic-sparkles"></i> AI Tools</h4>
+                                <div class="skill-cards">
+                                    <div class="skill-card">
+                                        <div class="skill-card__icon"><i class="fas fa-robot"></i></div>
+                                        <span class="skill-card__name">ChatGPT</span>
+                                    </div>
+                                    <div class="skill-card">
+                                        <div class="skill-card__icon"><i class="fas fa-brain"></i></div>
+                                        <span class="skill-card__name">Claude</span>
+                                    </div>
+                                    <div class="skill-card">
+                                        <div class="skill-card__icon"><i class="fas fa-gem"></i></div>
+                                        <span class="skill-card__name">Gemini</span>
+                                    </div>
+                                    <div class="skill-card">
+                                        <div class="skill-card__icon"><i class="fas fa-terminal"></i></div>
+                                        <span class="skill-card__name">Codex</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== EXPERIENCE SECTION ===== -->
+        <section class="experience section-padding bg-light" id="experience">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">My Journey</span>
+                    <h2 class="section-title">Experience & <span>Education</span></h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="experience__grid">
+                    <!-- Work Experience -->
+                    <div>
+                        <h3 class="exp__col-title"><i class="fas fa-briefcase"></i> Work Experience</h3>
+                        <div class="timeline">
+                            <div class="timeline__item">
+                                <div class="timeline__dot"></div>
+                                <div class="timeline__card">
+                                    <span class="timeline__year">2565 – 2566</span>
+                                    <h4 class="timeline__role">Intern Programmer & IT Support</h4>
+                                    <span class="timeline__org">สถาบันพัฒนาการเด็กราชนครินทร์ เชียงใหม่</span>
+                                    <p class="timeline__desc">
+                                        พัฒนา Frontend เว็บไซต์โรงพยาบาลด้วย React.js
+                                        พัฒนาแอปขายของออนไลน์และแอปข่าวสาร พร้อมให้บริการ IT Support
+                                        เช่น ซ่อมปริ้นเตอร์ และลงโปรแกรม Microsoft
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Education -->
+                    <div>
+                        <h3 class="exp__col-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+                        <div class="timeline">
+                            <div class="timeline__item">
+                                <div class="timeline__dot"></div>
+                                <div class="timeline__card">
+                                    <span class="timeline__year">2566</span>
+                                    <h4 class="timeline__role">ปริญญาตรี เทคโนโลยีสารสนเทศ</h4>
+                                    <span class="timeline__org">มหาวิทยาลัยราชภัฏเชียงใหม่</span>
+                                    <p class="timeline__desc">
+                                        ศึกษาด้านการพัฒนาเว็บไซต์และแอปพลิเคชัน พร้อมจัดทำโปรเจกต์
+                                        ระบบจัดการตารางเวรของพยาบาล
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PROJECTS SECTION ===== -->
+        <section class="projects section-padding bg-white" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">My Work</span>
+                    <h2 class="section-title">Recent <span>Projects</span></h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="projects__grid">
+
+                    <article class="project-card">
+                        <div class="project-card__img">
+                            <img src="https://placehold.co/420x240/7B0D1E/FFFFFF?text=Nurse+Schedule&font=poppins" alt="Hospital Schedule Management System">
+                            <div class="project-card__overlay">
+                                <a href="#" class="btn btn--white">View Project <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">Hospital Schedule Management</h3>
+                            <p class="project-card__desc">เว็บแอปจัดการและแลกเปลี่ยนตารางเวรของพยาบาล ลดข้อผิดพลาดในการจัดตาราง รองรับทั้งคอมพิวเตอร์และมือถือ (มรภ.เชียงใหม่, 2566)</p>
+                            <div class="project-card__tags">
+                                <span class="tag">Web App</span>
+                                <span class="tag">UI/UX</span>
+                                <span class="tag">Responsive</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-card__img">
+                            <img src="https://placehold.co/420x240/9B1030/FFFFFF?text=Hospital+Web&font=poppins" alt="Hospital Website">
+                            <div class="project-card__overlay">
+                                <a href="#" class="btn btn--white">View Project <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">Hospital Website (Frontend)</h3>
+                            <p class="project-card__desc">พัฒนาส่วน Frontend ของเว็บไซต์โรงพยาบาลด้วย React.js ระหว่างการฝึกงานที่สถาบันพัฒนาการเด็กราชนครินทร์</p>
+                            <div class="project-card__tags">
+                                <span class="tag">React.js</span>
+                                <span class="tag">Frontend</span>
+                                <span class="tag">CSS</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-card__img">
+                            <img src="https://placehold.co/420x240/5A0815/FFFFFF?text=Shop+App&font=poppins" alt="Online Store App">
+                            <div class="project-card__overlay">
+                                <a href="#" class="btn btn--white">View Project <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">Online Store App</h3>
+                            <p class="project-card__desc">แอปพลิเคชันขายของออนไลน์ พัฒนาระหว่างการฝึกงาน ออกแบบให้ใช้งานง่ายบนมือถือ</p>
+                            <div class="project-card__tags">
+                                <span class="tag">Flutter</span>
+                                <span class="tag">Dart</span>
+                                <span class="tag">Mobile App</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-card__img">
+                            <img src="https://placehold.co/420x240/7B0D1E/FFFFFF?text=News+App&font=poppins" alt="News App">
+                            <div class="project-card__overlay">
+                                <a href="#" class="btn btn--white">View Project <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">News App</h3>
+                            <p class="project-card__desc">แอปพลิเคชันข่าวสาร พัฒนาระหว่างการฝึกงาน แสดงข่าวและอัปเดตข้อมูลได้สะดวก</p>
+                            <div class="project-card__tags">
+                                <span class="tag">Flutter</span>
+                                <span class="tag">Dart</span>
+                                <span class="tag">Mobile App</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONTACT SECTION ===== -->
+        <section class="contact section-padding bg-light" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Get In Touch</span>
+                    <h2 class="section-title">Contact <span>Me</span></h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="contact__grid">
+                    <!-- Contact Info -->
+                    <div class="contact__info">
+                        <h3 class="contact__title">Let's Work Together!</h3>
+                        <p class="contact__desc">
+                            หากคุณมีโปรเจกต์ที่น่าสนใจหรืออยากร่วมงานกัน ฉันยินดีรับฟังเสมอ
+                            ส่งข้อความมาหาฉันได้เลย!
+                        </p>
+                        <div class="contact__details">
+                            <div class="contact__detail">
+                                <div class="contact__detail-icon"><i class="fas fa-envelope"></i></div>
+                                <div>
+                                    <span class="info-label">Email</span>
+                                    <span class="info-value">theeranat.penyai14@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="contact__detail">
+                                <div class="contact__detail-icon"><i class="fas fa-phone"></i></div>
+                                <div>
+                                    <span class="info-label">Phone</span>
+                                    <span class="info-value">094-360-5112</span>
+                                </div>
+                            </div>
+                            <div class="contact__detail">
+                                <div class="contact__detail-icon"><i class="fab fa-line"></i></div>
+                                <div>
+                                    <span class="info-label">LINE</span>
+                                    <span class="info-value">teeranat_14</span>
+                                </div>
+                            </div>
+                            <div class="contact__detail">
+                                <div class="contact__detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <div>
+                                    <span class="info-label">Location</span>
+                                    <span class="info-value">กรุงเทพ, ประเทศไทย</span>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="contact__social-title">Find me on</h4>
+                        <div class="social-links">
+                            <a href="mailto:theeranat.penyai14@gmail.com" class="social-link" data-platform="email" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="#" class="social-link" data-platform="line" aria-label="LINE">
+                                <i class="fab fa-line"></i>
+                            </a>
+                            <a href="#" class="social-link" data-platform="github"   aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="social-link" data-platform="linkedin" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Contact Form -->
+                    <div class="contact__form-wrap">
+                        <form class="contact-form" id="contactForm" novalidate>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Your Name *</label>
+                                    <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Your Email *</label>
+                                    <input type="email" id="email" name="email" class="form-input" placeholder="you@example.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-input" placeholder="Project Discussion">
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="Hello, I would like to discuss..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                            <div class="form-status" id="formStatus" role="alert"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <a href="#home" class="navbar__logo">PIPO<span>.</span></a>
+                    <p class="footer__tagline">Junior Frontend &amp; Flutter Developer · Bangkok</p>
+                </div>
+                <nav class="footer__nav" aria-label="Footer navigation">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                <div class="footer__social">
+                    <a href="mailto:theeranat.penyai14@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="#" aria-label="LINE"><i class="fab fa-line"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 <strong>Theeranat Penyai (PIPO)</strong>. Designed &amp; Developed with <i class="fas fa-heart"></i> in Bangkok, Thailand.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
