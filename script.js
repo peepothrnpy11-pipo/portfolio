@@ -184,36 +184,13 @@ document.querySelectorAll('.skill-card').forEach((card, i) => {
 });
 
 /* =============================================
-   SKILL BAR ANIMATION
-   ============================================= */
-const skillBarsObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.querySelectorAll('.skill-bar__fill').forEach((fill, i) => {
-                const width = fill.dataset.width;
-                // Stagger each bar slightly
-                setTimeout(() => {
-                    fill.style.width = width + '%';
-                }, i * 120);
-            });
-            skillBarsObserver.unobserve(entry.target);
-        }
-    });
-}, { threshold: 0.3 });
-
-const skillBarsContainer = document.getElementById('skillBars');
-if (skillBarsContainer) skillBarsObserver.observe(skillBarsContainer);
-
-/* =============================================
-   CONTACT FORM — validation + fake submit
+   CONTACT FORM — validation + Web3Forms submit
    ============================================= */
 const contactForm = document.getElementById('contactForm');
-const formStatus  = document.getElementById('formStatus');
 const submitBtn   = document.getElementById('submitBtn');
 
-contactForm.addEventListener('submit', e => {
+contactForm.addEventListener('submit', async e => {
     e.preventDefault();
-    formStatus.className = 'form-status'; // Reset
 
     // Basic validation
     const name    = contactForm.name.value.trim();
@@ -222,37 +199,67 @@ contactForm.addEventListener('submit', e => {
     const emailRx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (!name || !email || !message) {
-        showStatus('error', 'กรุณากรอกข้อมูลที่จำเป็นให้ครบถ้วน');
+        showModal('error', 'กรอกข้อมูลไม่ครบ', 'กรุณากรอกชื่อ อีเมล และข้อความให้ครบถ้วน');
         return;
     }
     if (!emailRx.test(email)) {
-        showStatus('error', 'รูปแบบอีเมลไม่ถูกต้อง กรุณาตรวจสอบอีกครั้ง');
+        showModal('error', 'อีเมลไม่ถูกต้อง', 'รูปแบบอีเมลไม่ถูกต้อง กรุณาตรวจสอบอีกครั้ง');
         return;
     }
 
     // Loading state
-    const originalHTML = submitBtn.innerHTML;
-    submitBtn.innerHTML  = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-    submitBtn.disabled   = true;
+    const originalHTML  = submitBtn.innerHTML;
+    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+    submitBtn.disabled  = true;
 
-    // Simulate API call (replace with real fetch/axios in production)
-    setTimeout(() => {
-        showStatus('success', '✅ ส่งข้อความสำเร็จ! ฉันจะติดต่อกลับโดยเร็ว ขอบคุณมากครับ');
-        contactForm.reset();
+    // Send to Web3Forms (access_key is a hidden field in the form)
+    try {
+        const response = await fetch('https://api.web3forms.com/submit', {
+            method:  'POST',
+            headers: { 'Accept': 'application/json' },
+            body:    new FormData(contactForm)
+        });
+        const data = await response.json();
+
+        if (data.success) {
+            showModal('success', 'ส่งข้อความสำเร็จ!', 'ขอบคุณค่ะ ฉันจะติดต่อกลับโดยเร็วที่สุด');
+            contactForm.reset();
+        } else {
+            showModal('error', 'ส่งไม่สำเร็จ', data.message || 'เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง');
+        }
+    } catch (err) {
+        showModal('error', 'เชื่อมต่อไม่สำเร็จ', 'กรุณาตรวจสอบอินเทอร์เน็ตแล้วลองใหม่อีกครั้ง');
+    } finally {
         submitBtn.innerHTML = originalHTML;
         submitBtn.disabled  = false;
-
-        // Auto-hide status after 6 s
-        setTimeout(() => {
-            formStatus.className = 'form-status';
-        }, 6000);
-    }, 1500);
+    }
 });
 
-function showStatus(type, message) {
-    formStatus.textContent = message;
-    formStatus.className   = `form-status ${type}`;
+/* Result popup (modal) */
+const formModal  = document.getElementById('formModal');
+const modalIcon  = document.getElementById('modalIcon');
+const modalTitle = document.getElementById('modalTitle');
+const modalText  = document.getElementById('modalText');
+
+function showModal(type, title, text) {
+    modalIcon.innerHTML    = type === 'success'
+        ? '<img src="kawaii_wai_nobg.gif" alt="ส่งสำเร็จ" class="modal__img">'
+        : '<i class="fas fa-xmark"></i>';
+    modalTitle.textContent = title;
+    modalText.textContent  = text;
+    formModal.className     = `modal modal--${type} open`;
+    formModal.setAttribute('aria-hidden', 'false');
 }
+
+function closeModal() {
+    formModal.classList.remove('open');
+    formModal.setAttribute('aria-hidden', 'true');
+}
+
+formModal.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', closeModal));
+document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && formModal.classList.contains('open')) closeModal();
+});
 
 /* =============================================
    INPUT FOCUS EFFECT — floating label feel

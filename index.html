@@ -1,16 +1,40 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Theeranat Penyai | Junior Frontend Developer</title>
-    <meta name="description" content="Theeranat Penyai (PIPO) - Junior Frontend & Flutter Developer based in Bangkok, Thailand.">
+    <title>PORTFOLIO</title>
+    <meta name="description"
+        content="ธีรนาฏ เป็นใย (ปีโป้) - Junior Frontend & Flutter Developer พัฒนาเว็บไซต์และแอปพลิเคชันด้วย React, Next.js และ Flutter">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!-- Open Graph (Facebook / LINE) — หลัง deploy เปลี่ยน your-domain.vercel.app เป็นโดเมนจริง -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-domain.vercel.app/">
+    <meta property="og:title" content="ธีรนาฏ เป็นใย | Junior Frontend Developer">
+    <meta property="og:description"
+        content="พอร์ตโฟลิโอนักพัฒนา Frontend และ Flutter — HTML, CSS, JavaScript, React, Next.js, Flutter">
+    <meta property="og:image" content="https://your-domain.vercel.app/og-image.png">
+    <meta property="og:locale" content="th_TH">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ธีรนาฏ เป็นใย | Junior Frontend Developer">
+    <meta name="twitter:description" content="พอร์ตโฟลิโอนักพัฒนา Frontend และ Flutter">
+    <meta name="twitter:image" content="https://your-domain.vercel.app/og-image.png">
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
     <!-- ===== NAVBAR ===== -->
@@ -19,12 +43,12 @@
             <a href="#home" class="navbar__logo">PIPO<span>.</span></a>
             <nav class="navbar__menu" id="navMenu" aria-label="Main navigation">
                 <ul class="navbar__list">
-                    <li><a href="#home"       class="navbar__link active">Home</a></li>
-                    <li><a href="#about"      class="navbar__link">About</a></li>
-                    <li><a href="#skills"     class="navbar__link">Skills</a></li>
+                    <li><a href="#home" class="navbar__link active">Home</a></li>
+                    <li><a href="#about" class="navbar__link">About</a></li>
+                    <li><a href="#skills" class="navbar__link">Skills</a></li>
                     <li><a href="#experience" class="navbar__link">Experience</a></li>
-                    <li><a href="#projects"   class="navbar__link">Projects</a></li>
-                    <li><a href="#contact"    class="navbar__link">Contact</a></li>
+                    <li><a href="#projects" class="navbar__link">Projects</a></li>
+                    <li><a href="#contact" class="navbar__link">Contact</a></li>
                 </ul>
             </nav>
             <button class="navbar__hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
@@ -45,7 +69,7 @@
                 <!-- Left: Text Content -->
                 <div class="hero__content">
                     <p class="hero__greeting">Hello, I'm</p>
-                    <h1 class="hero__name">Theeranat <span>Penyai</span></h1>
+                    <h1 class="hero__name">PI<span>PO</span></h1>
                     <div class="hero__title-wrapper">
                         <span class="hero__title" id="typingText"></span><span class="hero__cursor">|</span>
                     </div>
@@ -63,17 +87,20 @@
                     </div>
                     <div class="hero__stats">
                         <div class="hero__stat">
-                            <span class="hero__stat-number" data-count="1">0</span><span class="hero__stat-plus">+</span>
+                            <span class="hero__stat-number" data-count="1">0</span><span
+                                class="hero__stat-plus">+</span>
                             <span class="hero__stat-label">Years Exp.</span>
                         </div>
                         <div class="hero__stat-divider"></div>
                         <div class="hero__stat">
-                            <span class="hero__stat-number" data-count="4">0</span><span class="hero__stat-plus">+</span>
+                            <span class="hero__stat-number" data-count="1">0</span><span
+                                class="hero__stat-plus">+</span>
                             <span class="hero__stat-label">Projects</span>
                         </div>
                         <div class="hero__stat-divider"></div>
                         <div class="hero__stat">
-                            <span class="hero__stat-number" data-count="12">0</span><span class="hero__stat-plus">+</span>
+                            <span class="hero__stat-number" data-count="12">0</span><span
+                                class="hero__stat-plus">+</span>
                             <span class="hero__stat-label">Tools</span>
                         </div>
                     </div>
@@ -83,7 +110,8 @@
                 <div class="hero__image-wrapper">
                     <div class="hero__image-ring"></div>
                     <div class="hero__image">
-                        <img src="https://placehold.co/400x400/7B0D1E/FFFFFF?text=PIPO&font=poppins" alt="PIPO Profile Photo">
+                        <img src="https://placehold.co/400x400/7B0D1E/FFFFFF?text=PIPO&font=poppins"
+                            alt="PIPO Profile Photo">
                     </div>
                     <div class="hero__badge hero__badge--1">
                         <div class="hero__badge-icon"><i class="fas fa-code"></i></div>
@@ -103,7 +131,9 @@
             <!-- Scroll Indicator -->
             <div class="hero__scroll">
                 <a href="#about" aria-label="Scroll to About">
-                    <div class="hero__scroll-mouse"><div class="hero__scroll-wheel"></div></div>
+                    <div class="hero__scroll-mouse">
+                        <div class="hero__scroll-wheel"></div>
+                    </div>
                     <span>Scroll Down</span>
                 </a>
             </div>
@@ -118,35 +148,24 @@
                     <div class="section-line"></div>
                 </div>
                 <div class="about__grid">
-                    <!-- Profile Image -->
-                    <div class="about__image-col">
-                        <div class="about__image-frame">
-                            <img src="https://placehold.co/400x480/7B0D1E/FFFFFF?text=Profile&font=poppins" alt="About PIPO">
-                            <div class="about__image-border"></div>
-                        </div>
-                        <div class="about__exp-badge">
-                            <span class="about__exp-num">1+</span>
-                            <span class="about__exp-text">Years of<br>Experience</span>
-                        </div>
-                    </div>
                     <!-- Bio Content -->
                     <div class="about__content">
                         <h3 class="about__subtitle">Junior Frontend & Flutter Developer</h3>
                         <p class="about__desc">
-                            สวัสดีครับ! ผมชื่อ <strong>Theeranat Penyai (PIPO)</strong> นักพัฒนา Frontend และ Flutter
-                            ระดับเริ่มต้น มีความรู้พื้นฐานด้าน HTML, CSS และ Dart สนใจพัฒนาเว็บไซต์และ
-                            แอปพลิเคชันให้ใช้งานง่ายและตอบโจทย์ผู้ใช้จริง
+                            สวัสดีค่ะ! ฉันชื่อ <strong>ธีรนาฏ เป็นใย (ปีโป้)</strong> นักพัฒนา Frontend Developer และ Mobile Development
+                            ระดับเริ่มต้น มีพื้นฐานด้าน HTML, CSS และ Dart ชอบสร้างเว็บไซต์และ
+                            แอปพลิเคชันที่ใช้งานง่ายและตอบโจทย์ผู้ใช้จริง
                         </p>
                         <p class="about__desc">
-                            ผมพร้อมเรียนรู้งานจริง พัฒนาทักษะใหม่ ๆ อยู่เสมอ และทำงานร่วมกับทีมได้ดี
-                            มุ่งมั่นที่จะเติบโตเป็นนักพัฒนาที่ส่งมอบงานคุณภาพ
+                            ฉันพร้อมเรียนรู้สิ่งใหม่ ๆ และพัฒนาทักษะอยู่เสมอ ทำงานร่วมกับทีมได้ดี
+                            และมุ่งมั่นที่จะเติบโตเป็นนักพัฒนาที่ส่งมอบงานคุณภาพค่ะ
                         </p>
                         <div class="about__info-grid">
                             <div class="about__info-item">
                                 <i class="fas fa-user"></i>
                                 <div>
                                     <span class="info-label">ชื่อเล่น</span>
-                                    <span class="info-value">PIPO</span>
+                                    <span class="info-value">ปีโป้ (PIPO)</span>
                                 </div>
                             </div>
                             <div class="about__info-item">
@@ -189,6 +208,30 @@
                             <i class="fas fa-download"></i> Download CV
                         </a>
                     </div>
+                    <!-- What I Do -->
+                    <div class="about__services">
+                        <div class="about__service">
+                            <div class="about__service-icon"><i class="fas fa-code"></i></div>
+                            <div>
+                                <h4 class="about__service-title">Web Development</h4>
+                                <p class="about__service-desc">พัฒนาเว็บไซต์ด้วย HTML, CSS, JavaScript, React และ Next.js ให้ใช้งานง่ายและรองรับทุกอุปกรณ์</p>
+                            </div>
+                        </div>
+                        <div class="about__service">
+                            <div class="about__service-icon"><i class="fas fa-mobile-screen-button"></i></div>
+                            <div>
+                                <h4 class="about__service-title">Mobile Development</h4>
+                                <p class="about__service-desc">สร้างแอปพลิเคชันมือถือด้วย Flutter (Dart) ใช้งานได้ทั้ง Android และ iOS</p>
+                            </div>
+                        </div>
+                        <div class="about__service">
+                            <div class="about__service-icon"><i class="fas fa-palette"></i></div>
+                            <div>
+                                <h4 class="about__service-title">UI / UX Design</h4>
+                                <p class="about__service-desc">ออกแบบหน้าตาและประสบการณ์ใช้งานด้วย Figma เน้นเรียบง่าย สวยงาม และใช้งานสะดวก</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -202,70 +245,7 @@
                     <div class="section-line"></div>
                 </div>
                 <div class="skills__grid">
-                    <!-- Skill Bars -->
-                    <div class="skills__bars-col">
-                        <h3 class="skills__col-title">Technical Proficiency</h3>
-                        <p class="skills__col-desc">
-                            ทักษะเชิงเทคนิคที่ผมใช้งานอยู่เป็นประจำในการพัฒนาโปรเจกต์จริง
-                        </p>
-                        <div class="skill-bars" id="skillBars">
-                            <div class="skill-bar">
-                                <div class="skill-bar__header">
-                                    <span class="skill-bar__name">HTML5 / CSS3</span>
-                                    <span class="skill-bar__pct">80%</span>
-                                </div>
-                                <div class="skill-bar__track">
-                                    <div class="skill-bar__fill" data-width="80"></div>
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-bar__header">
-                                    <span class="skill-bar__name">JavaScript</span>
-                                    <span class="skill-bar__pct">70%</span>
-                                </div>
-                                <div class="skill-bar__track">
-                                    <div class="skill-bar__fill" data-width="70"></div>
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-bar__header">
-                                    <span class="skill-bar__name">React / Next.js</span>
-                                    <span class="skill-bar__pct">68%</span>
-                                </div>
-                                <div class="skill-bar__track">
-                                    <div class="skill-bar__fill" data-width="68"></div>
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-bar__header">
-                                    <span class="skill-bar__name">Flutter (Dart)</span>
-                                    <span class="skill-bar__pct">72%</span>
-                                </div>
-                                <div class="skill-bar__track">
-                                    <div class="skill-bar__fill" data-width="72"></div>
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-bar__header">
-                                    <span class="skill-bar__name">Tailwind / Bootstrap</span>
-                                    <span class="skill-bar__pct">75%</span>
-                                </div>
-                                <div class="skill-bar__track">
-                                    <div class="skill-bar__fill" data-width="75"></div>
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-bar__header">
-                                    <span class="skill-bar__name">Git / GitHub</span>
-                                    <span class="skill-bar__pct">70%</span>
-                                </div>
-                                <div class="skill-bar__track">
-                                    <div class="skill-bar__fill" data-width="70"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Skill Cards -->
+                    <!-- Skill Categories -->
                     <div class="skills__cards-col">
                         <h3 class="skills__col-title">Tools & Technologies</h3>
                         <div class="skill-groups">
@@ -415,12 +395,12 @@
                                 <div class="timeline__dot"></div>
                                 <div class="timeline__card">
                                     <span class="timeline__year">2565 – 2566</span>
-                                    <h4 class="timeline__role">Intern Programmer & IT Support</h4>
+                                    <h4 class="timeline__role">Programmer & IT Support</h4>
                                     <span class="timeline__org">สถาบันพัฒนาการเด็กราชนครินทร์ เชียงใหม่</span>
                                     <p class="timeline__desc">
-                                        พัฒนา Frontend เว็บไซต์โรงพยาบาลด้วย React.js
-                                        พัฒนาแอปขายของออนไลน์และแอปข่าวสาร พร้อมให้บริการ IT Support
-                                        เช่น ซ่อมปริ้นเตอร์ และลงโปรแกรม Microsoft
+                                        - พัฒนา Frontend เว็บโรงพยาบาลด้วย React.js<br>
+                                        - พัฒนาแอปขายของออนไลน์และแอปข่าวสาร<br>
+                                        - ให้บริการ IT Support ให้โรงพยาบาล เช่นซ่อมปริ้นเตอร์ ลงมายโครซอฟ
                                     </p>
                                 </div>
                             </div>
@@ -437,8 +417,8 @@
                                     <h4 class="timeline__role">ปริญญาตรี เทคโนโลยีสารสนเทศ</h4>
                                     <span class="timeline__org">มหาวิทยาลัยราชภัฏเชียงใหม่</span>
                                     <p class="timeline__desc">
-                                        ศึกษาด้านการพัฒนาเว็บไซต์และแอปพลิเคชัน พร้อมจัดทำโปรเจกต์
-                                        ระบบจัดการตารางเวรของพยาบาล
+                                        สำเร็จการศึกษาระดับปริญญาตรี สาขาเทคโนโลยีสารสนเทศ มหาวิทยาลัยราชภัฏเชียงใหม่
+                                        ระหว่างวันที่ 24 มิถุนายน 2562 - 28 พฤศจิกายน 2566
                                     </p>
                                 </div>
                             </div>
@@ -460,72 +440,146 @@
 
                     <article class="project-card">
                         <div class="project-card__img">
-                            <img src="https://placehold.co/420x240/7B0D1E/FFFFFF?text=Nurse+Schedule&font=poppins" alt="Hospital Schedule Management System">
+                            <img src="imges/Screenshot%202026-06-15%20180318.png"
+                                alt="Hospital Schedule Management System">
+                            <span class="project-card__type">เว็บแอปพลิเคชัน</span>
                             <div class="project-card__overlay">
-                                <a href="#" class="btn btn--white">View Project <i class="fas fa-arrow-right"></i></a>
+                                <a href="https://hospital1414.infinityfreeapp.com/" target="_blank" rel="noopener" class="btn btn--white">View Project <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                         <div class="project-card__body">
-                            <h3 class="project-card__title">Hospital Schedule Management</h3>
-                            <p class="project-card__desc">เว็บแอปจัดการและแลกเปลี่ยนตารางเวรของพยาบาล ลดข้อผิดพลาดในการจัดตาราง รองรับทั้งคอมพิวเตอร์และมือถือ (มรภ.เชียงใหม่, 2566)</p>
+                            <h3 class="project-card__title">ระบบจัดการตารางเวรพยาบาล</h3>
+                            <ul class="project-card__desc">
+                                <li>โปรเจกต์จบปี 2566 · เทคโนโลยีสารสนเทศ มรภ.เชียงใหม่</li>
+                                <li>เว็บแอปจัดการและแลกเปลี่ยนเวรพยาบาล — จัดตารางเวร ขอแลกเวร พร้อมระบบอนุมัติและติดตามสถานะ</li>
+                                <li>มีระบบสมาชิก/กำหนดสิทธิ์ผู้ใช้-แอดมิน และจัดการข้อมูล OT พร้อมรายงานสรุป</li>
+                            </ul>
                             <div class="project-card__tags">
-                                <span class="tag">Web App</span>
-                                <span class="tag">UI/UX</span>
-                                <span class="tag">Responsive</span>
+                                <span class="tag">Bootstrap</span>
+                                <span class="tag">PHP</span>
+                                <span class="tag">MySQL</span>
                             </div>
                         </div>
                     </article>
 
                     <article class="project-card">
                         <div class="project-card__img">
-                            <img src="https://placehold.co/420x240/9B1030/FFFFFF?text=Hospital+Web&font=poppins" alt="Hospital Website">
+                            <img src="imges/Screenshot%202026-06-15%20181234.png"
+                                alt="devdrop Online Course Website">
+                            <span class="project-card__type">Landing Page</span>
                             <div class="project-card__overlay">
-                                <a href="#" class="btn btn--white">View Project <i class="fas fa-arrow-right"></i></a>
+                                <a href="https://online-course-tau-vert.vercel.app/" target="_blank" rel="noopener" class="btn btn--white">View Project <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                         <div class="project-card__body">
-                            <h3 class="project-card__title">Hospital Website (Frontend)</h3>
-                            <p class="project-card__desc">พัฒนาส่วน Frontend ของเว็บไซต์โรงพยาบาลด้วย React.js ระหว่างการฝึกงานที่สถาบันพัฒนาการเด็กราชนครินทร์</p>
+                            <h3 class="project-card__title">devdrop — เว็บคอร์สเรียนโปรแกรมมิ่งและ AI ออนไลน์</h3>
+                            <ul class="project-card__desc">
+                                <li>โปรเจกต์ Landing Page สำหรับโรงเรียนสอนโปรแกรมมิ่งและ AI ออนไลน์ · เทคโนโลยี HTML, CSS, JavaScript ล้วน</li>
+                                <li>เว็บแสดงข้อมูลคอร์สและแพ็กเกจต่าง ๆ ตั้งแต่ระดับเริ่มต้นจนถึง AI และ Machine Learning พร้อมฟอร์มให้ผู้สนใจกรอกข้อมูลเพื่อรับคำปรึกษา</li>
+                                <li>มีระบบสลับภาษา EN/TH, รองรับมือถือ และ Animation บนหน้าเว็บ</li>
+                            </ul>
                             <div class="project-card__tags">
-                                <span class="tag">React.js</span>
-                                <span class="tag">Frontend</span>
+                                <span class="tag">HTML</span>
                                 <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
                             </div>
                         </div>
                     </article>
 
                     <article class="project-card">
                         <div class="project-card__img">
-                            <img src="https://placehold.co/420x240/5A0815/FFFFFF?text=Shop+App&font=poppins" alt="Online Store App">
+                            <img src="imges/Screenshot%202026-06-15%20191521.png"
+                                alt="Online Meeting Management System">
+                            <span class="project-card__type">เว็บแอปพลิเคชัน</span>
                             <div class="project-card__overlay">
                                 <a href="#" class="btn btn--white">View Project <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                         <div class="project-card__body">
-                            <h3 class="project-card__title">Online Store App</h3>
-                            <p class="project-card__desc">แอปพลิเคชันขายของออนไลน์ พัฒนาระหว่างการฝึกงาน ออกแบบให้ใช้งานง่ายบนมือถือ</p>
+                            <h3 class="project-card__title">ระบบจัดการการประชุมออนไลน์ (Meeting App)</h3>
+                            <ul class="project-card__desc">
+                                <li>เว็บแอปจัดการการประชุมภายในองค์กร — สร้าง/แก้ไข/ลบการประชุม พร้อม QR Code เช็คชื่อผู้เข้าร่วมและ Export รายงาน</li>
+                                <li>มีระบบสมาชิก/กำหนดสิทธิ์ผู้ใช้แบบ RBAC (Admin, User, Custom Role) พร้อมระบบ Roles &amp; Permissions ละเอียดในแต่ละหมวด</li>
+                                <li>มีระบบบันทึกรายงานการประชุม, จัดการ OT, ปฏิทิน และ Dashboard ตั้งค่าระบบ</li>
+                            </ul>
                             <div class="project-card__tags">
-                                <span class="tag">Flutter</span>
-                                <span class="tag">Dart</span>
-                                <span class="tag">Mobile App</span>
+                                <span class="tag">React + TypeScript</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">MySQL</span>
                             </div>
                         </div>
                     </article>
 
                     <article class="project-card">
                         <div class="project-card__img">
-                            <img src="https://placehold.co/420x240/7B0D1E/FFFFFF?text=News+App&font=poppins" alt="News App">
+                            <img src="imges/Screenshot%202026-06-15%20192130.png"
+                                alt="NEXUS CHAMPIONSHIP 2025 eSports Ticket Booking Platform">
+                            <span class="project-card__type">เว็บแอปพลิเคชัน</span>
                             <div class="project-card__overlay">
-                                <a href="#" class="btn btn--white">View Project <i class="fas fa-arrow-right"></i></a>
+                                <a href="https://book-tickets-tan.vercel.app/" target="_blank" rel="noopener" class="btn btn--white">View Project <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                         <div class="project-card__body">
-                            <h3 class="project-card__title">News App</h3>
-                            <p class="project-card__desc">แอปพลิเคชันข่าวสาร พัฒนาระหว่างการฝึกงาน แสดงข่าวและอัปเดตข้อมูลได้สะดวก</p>
+                            <h3 class="project-card__title">แพลตฟอร์มจองตั๋วการแข่งขัน eSports (NEXUS CHAMPIONSHIP 2025)</h3>
+                            <ul class="project-card__desc">
+                                <li>เว็บแอปจองตั๋ว eSports แบบครบวงจร — เลือกแมตช์ เลือกที่นั่งจากผังจริง (VIP/Premium/Regular) อัปโหลดสลิปชำระเงิน และรับตั๋ว QR Code พร้อม Hold ที่นั่งอัตโนมัติ 15 นาที</li>
+                                <li>มีระบบ Admin จัดการอีเวนต์/แมตช์/ผู้ใช้ ยืนยันการชำระเงิน เช็คอินหน้างานผ่าน QR และส่งอีเมลแจ้งสถานะ</li>
+                                <li>มี LINE Bot (read-only ผ่าน n8n) ให้ผู้ใช้ดูแมตช์และเช็คตั๋วผ่านแชต LINE โดยไม่ต้องเปิดเว็บ</li>
+                            </ul>
                             <div class="project-card__tags">
-                                <span class="tag">Flutter</span>
-                                <span class="tag">Dart</span>
-                                <span class="tag">Mobile App</span>
+                                <span class="tag">Next.js</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">PostgreSQL (Neon)</span>
+                                <span class="tag">Prisma</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-card__img">
+                            <img src="imges/Screenshot%202026-06-15%20192834.png"
+                                alt="Game Store Online">
+                            <span class="project-card__type">เว็บแอปพลิเคชัน</span>
+                            <div class="project-card__overlay">
+                                <a href="https://game-stor-woad.vercel.app/" target="_blank" rel="noopener" class="btn btn--white">View Project <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">ร้านค้าเกมออนไลน์ (Game Store)</h3>
+                            <ul class="project-card__desc">
+                                <li>เว็บแอปร้านขายไอดีเกมและเติมเกม — มีหน้าร้านค้า, ระบบเติมเงินในเกม (Top-up), และหน้าจัดการบัญชีเกมของผู้ใช้</li>
+                                <li>มีระบบสมาชิก (Login ผ่าน LINE), หน้าโปรไฟล์, ประวัติการซื้อ และระบบ Support พร้อม Admin Dashboard จัดการร้าน</li>
+                                <li>มีการแจ้งเตือนทางอีเมลเมื่อเติมเงินสำเร็จ และเชื่อมต่อกับ Firebase และ Supabase เป็น Backend</li>
+                            </ul>
+                            <div class="project-card__tags">
+                                <span class="tag">Next.js</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">Firebase</span>
+                                <span class="tag">Supabase</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-card__img">
+                            <img src="imges/Screenshot%202026-06-15%20203505.png"
+                                alt="AXON Robotics Landing Page">
+                            <span class="project-card__type">Landing Page</span>
+                            <div class="project-card__overlay">
+                                <a href="http://robot-9bb8.vercel.app/" target="_blank" rel="noopener" class="btn btn--white">View Project <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">AXON Robotics — Landing Page บริษัทหุ่นยนต์</h3>
+                            <ul class="project-card__desc">
+                                <li>เว็บ Landing Page สำหรับแบรนด์หุ่นยนต์ "AXON Robotics" — แสดงสินค้าหุ่นยนต์หลายรุ่น เช่น AXON-1 Dev พร้อมสเปค (IP67 Rated, ความแม่นยำ 0.02mm, 24/7 Operation) และข้อมูลแพลตฟอร์มวิจัย</li>
+                                <li>มีหน้า Hero พร้อมภาพ robot animation (SVG + Orbital rings), วิดีโอพื้นหลัง และ Showcase การ์ดแสดงรุ่นหุ่นยนต์ต่าง ๆ รองรับ 2 ภาษา (EN/TH)</li>
+                                <li>ทำด้วยไฟล์ HTML ไฟล์เดียว ไม่ใช้ Framework มี CSS + JavaScript ฝังอยู่ในไฟล์เดียวกันทั้งหมด</li>
+                            </ul>
+                            <div class="project-card__tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
                             </div>
                         </div>
                     </article>
@@ -547,8 +601,8 @@
                     <div class="contact__info">
                         <h3 class="contact__title">Let's Work Together!</h3>
                         <p class="contact__desc">
-                            หากคุณมีโปรเจกต์ที่น่าสนใจหรืออยากร่วมงานกัน ฉันยินดีรับฟังเสมอ
-                            ส่งข้อความมาหาฉันได้เลย!
+                            หากคุณมีโปรเจกต์ที่น่าสนใจหรืออยากร่วมงานกัน ฉันยินดีรับฟังเสมอค่ะ
+                            ส่งข้อความมาหาได้เลย!
                         </p>
                         <div class="contact__details">
                             <div class="contact__detail">
@@ -582,13 +636,15 @@
                         </div>
                         <h4 class="contact__social-title">Find me on</h4>
                         <div class="social-links">
-                            <a href="mailto:theeranat.penyai14@gmail.com" class="social-link" data-platform="email" aria-label="Email">
+                            <a href="mailto:theeranat.penyai14@gmail.com" class="social-link" data-platform="email"
+                                aria-label="Email">
                                 <i class="fas fa-envelope"></i>
                             </a>
-                            <a href="#" class="social-link" data-platform="line" aria-label="LINE">
+                            <a href="https://line.me/ti/p/~teeranat_14" target="_blank" rel="noopener"
+                                class="social-link" data-platform="line" aria-label="LINE">
                                 <i class="fab fa-line"></i>
                             </a>
-                            <a href="#" class="social-link" data-platform="github"   aria-label="GitHub">
+                            <a href="#" class="social-link" data-platform="github" aria-label="GitHub">
                                 <i class="fab fa-github"></i>
                             </a>
                             <a href="#" class="social-link" data-platform="linkedin" aria-label="LinkedIn">
@@ -599,28 +655,37 @@
                     <!-- Contact Form -->
                     <div class="contact__form-wrap">
                         <form class="contact-form" id="contactForm" novalidate>
+                            <!-- Web3Forms: เปลี่ยน value เป็น access key ฟรีของคุณจาก https://web3forms.com (กรอกอีเมล theeranat.penyai14@gmail.com แล้วคีย์จะถูกส่งไปทางอีเมล) -->
+                            <input type="hidden" name="access_key" value="e21265cc-ef62-4247-9269-fd8547ca6bd7">
+                            <input type="hidden" name="from_name" value="Portfolio - ธีรนาฏ เป็นใย">
+                            <!-- Honeypot กันบอท: ปล่อยว่างไว้ ห้ามลบ -->
+                            <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" autocomplete="off"
+                                aria-hidden="true">
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="name" class="form-label">Your Name *</label>
-                                    <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
+                                    <input type="text" id="name" name="name" class="form-input" placeholder="Your name"
+                                        required>
                                 </div>
                                 <div class="form-group">
                                     <label for="email" class="form-label">Your Email *</label>
-                                    <input type="email" id="email" name="email" class="form-input" placeholder="you@example.com" required>
+                                    <input type="email" id="email" name="email" class="form-input"
+                                        placeholder="you@example.com" required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="subject" class="form-label">Subject</label>
-                                <input type="text" id="subject" name="subject" class="form-input" placeholder="Project Discussion">
+                                <input type="text" id="subject" name="subject" class="form-input"
+                                    placeholder="Project Discussion">
                             </div>
                             <div class="form-group">
                                 <label for="message" class="form-label">Message *</label>
-                                <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="Hello, I would like to discuss..." required></textarea>
+                                <textarea id="message" name="message" class="form-textarea" rows="5"
+                                    placeholder="Hello, I would like to discuss..." required></textarea>
                             </div>
                             <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
                                 <i class="fas fa-paper-plane"></i> Send Message
                             </button>
-                            <div class="form-status" id="formStatus" role="alert"></div>
                         </form>
                     </div>
                 </div>
@@ -647,12 +712,13 @@
                 </nav>
                 <div class="footer__social">
                     <a href="mailto:theeranat.penyai14@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="#" aria-label="LINE"><i class="fab fa-line"></i></a>
+                    <a href="https://line.me/ti/p/~teeranat_14" target="_blank" rel="noopener" aria-label="LINE"><i class="fab fa-line"></i></a>
                     <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 </div>
             </div>
             <div class="footer__bottom">
-                <p>&copy; 2026 <strong>Theeranat Penyai (PIPO)</strong>. Designed &amp; Developed with <i class="fas fa-heart"></i> in Bangkok, Thailand.</p>
+                <p>&copy; 2026 <strong>Theeranat Penyai (PIPO)</strong>. Designed &amp; Developed with <i
+                        class="fas fa-heart"></i> in Bangkok, Thailand.</p>
             </div>
         </div>
     </footer>
@@ -662,6 +728,18 @@
         <i class="fas fa-chevron-up"></i>
     </button>
 
+    <!-- ===== FORM RESULT POPUP ===== -->
+    <div class="modal" id="formModal" aria-hidden="true">
+        <div class="modal__overlay" data-close></div>
+        <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <div class="modal__icon" id="modalIcon"><i class="fas fa-check"></i></div>
+            <h3 class="modal__title" id="modalTitle">ส่งข้อความสำเร็จ!</h3>
+            <p class="modal__text" id="modalText">ขอบคุณค่ะ ฉันจะติดต่อกลับโดยเร็วที่สุด</p>
+            <button class="btn btn--primary modal__btn" data-close>ตกลง</button>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
