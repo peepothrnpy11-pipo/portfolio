@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTFOLIO</title>
+    <title>ธีรนาฏ เป็นใย (PIPO) | Junior Frontend Developer</title>
     <meta name="description"
         content="ธีรนาฏ เป็นใย (ปีโป้) - Junior Frontend & Flutter Developer พัฒนาเว็บไซต์และแอปพลิเคชันด้วย React, Next.js และ Flutter">
 
@@ -12,26 +12,27 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-    <!-- Open Graph (Facebook / LINE) — หลัง deploy เปลี่ยน your-domain.vercel.app เป็นโดเมนจริง -->
+    <!-- Open Graph (Facebook / LINE) -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://your-domain.vercel.app/">
+    <meta property="og:url" content="https://peepothrnpy11-pipo.github.io/portfolio/">
     <meta property="og:title" content="ธีรนาฏ เป็นใย | Junior Frontend Developer">
     <meta property="og:description"
         content="พอร์ตโฟลิโอนักพัฒนา Frontend และ Flutter — HTML, CSS, JavaScript, React, Next.js, Flutter">
-    <meta property="og:image" content="https://your-domain.vercel.app/og-image.png">
+    <meta property="og:image" content="https://peepothrnpy11-pipo.github.io/portfolio/og-image.png">
     <meta property="og:locale" content="th_TH">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="ธีรนาฏ เป็นใย | Junior Frontend Developer">
     <meta name="twitter:description" content="พอร์ตโฟลิโอนักพัฒนา Frontend และ Flutter">
-    <meta name="twitter:image" content="https://your-domain.vercel.app/og-image.png">
+    <meta name="twitter:image" content="https://peepothrnpy11-pipo.github.io/portfolio/og-image.png">
 
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,700;7..72,800&family=Work+Sans:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
@@ -43,15 +44,23 @@
             <a href="#home" class="navbar__logo">PIPO<span>.</span></a>
             <nav class="navbar__menu" id="navMenu" aria-label="Main navigation">
                 <ul class="navbar__list">
-                    <li><a href="#home" class="navbar__link active">Home</a></li>
-                    <li><a href="#about" class="navbar__link">About</a></li>
-                    <li><a href="#skills" class="navbar__link">Skills</a></li>
-                    <li><a href="#experience" class="navbar__link">Experience</a></li>
-                    <li><a href="#projects" class="navbar__link">Projects</a></li>
-                    <li><a href="#contact" class="navbar__link">Contact</a></li>
+                    <li><a href="#home" class="navbar__link active" data-i18n="nav.home">หน้าแรก</a></li>
+                    <li><a href="#about" class="navbar__link" data-i18n="nav.about">เกี่ยวกับ</a></li>
+                    <li><a href="#skills" class="navbar__link" data-i18n="nav.skills">ทักษะ</a></li>
+                    <li><a href="#experience" class="navbar__link" data-i18n="nav.experience">ประสบการณ์</a></li>
+                    <li><a href="#projects" class="navbar__link" data-i18n="nav.projects">โปรเจกต์</a></li>
+                    <li><a href="#contact" class="navbar__link" data-i18n="nav.contact">ติดต่อ</a></li>
+                    <li class="navbar__mobile-cta"><a href="resume.pdf" class="btn btn--primary btn--full" download data-i18n="nav.resumeDownload">ดาวน์โหลด Resume</a></li>
                 </ul>
             </nav>
-            <button class="navbar__hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+            <div class="navbar__actions">
+                <div class="lang-switch" role="group" data-i18n-aria="nav.langSwitch" aria-label="เลือกภาษา">
+                    <button type="button" class="lang-switch__btn is-active" data-lang="th" aria-pressed="true">TH</button>
+                    <button type="button" class="lang-switch__btn" data-lang="en" aria-pressed="false">EN</button>
+                </div>
+                <a href="resume.pdf" class="btn btn--primary navbar__cta" download data-i18n="nav.resume">Resume</a>
+            </div>
+            <button type="button" class="navbar__hamburger" id="hamburger" data-i18n-aria="nav.menuToggle" aria-label="เปิด/ปิดเมนู" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -67,73 +76,125 @@
 
                 <!-- Left: Text Content -->
                 <div class="hero__content">
-                    <p class="hero__greeting">Hello, I'm</p>
+                    <p class="hero__greeting" data-i18n="hero.greeting">ธีรนาฏ เป็นใย · Frontend &amp; Flutter Developer</p>
                     <h1 class="hero__name">PI<span>PO</span></h1>
-                    <div class="hero__title-wrapper">
-                        <span class="hero__title" id="typingText"></span><span class="hero__cursor">|</span>
+                    <div class="hero__title-wrapper" aria-live="polite" aria-atomic="true">
+                        <span class="hero__title" id="typingText"></span><span class="hero__cursor" aria-hidden="true">|</span>
                     </div>
-                    <p class="hero__description">
-                        นักพัฒนา Frontend และ Flutter ระดับเริ่มต้น สนใจสร้างเว็บไซต์และแอปพลิเคชัน
-                        ให้ใช้งานง่าย พร้อมเรียนรู้งานจริงและพัฒนาทักษะใหม่ ๆ อยู่เสมอ
+                    <p class="hero__description" data-i18n="hero.description">
+                        พัฒนาเว็บและแอปที่ใช้งานง่าย ด้วย React, Next.js และ Flutter
+                        มุ่งเน้นโค้ดที่อ่านง่าย UI ที่ใช้งานได้จริง และการส่งมอบงานตรงเวลา
                     </p>
                     <div class="hero__buttons">
-                        <a href="P:\Project\portfolio\resume.pdf" class="btn btn--primary">
-                            <i class="fas fa-download"></i> Download Resume
+                        <a href="resume.pdf" class="btn btn--primary" download>
+                            <i class="fas fa-download" aria-hidden="true"></i> <span data-i18n="hero.downloadResume">ดาวน์โหลด Resume</span>
                         </a>
                         <a href="#contact" class="btn btn--outline">
-                            <i class="fas fa-envelope"></i> Contact Me
+                            <i class="fas fa-envelope" aria-hidden="true"></i> <span data-i18n="hero.contact">ติดต่อฉัน</span>
                         </a>
                     </div>
+                    <p class="hero__featured">
+                        <span class="hero__featured-label" data-i18n="hero.featuredLabel">โปรเจกต์เด่น</span>
+                        <a href="https://game-stor-woad.vercel.app/" target="_blank" rel="noopener">GAMESTORE</a>
+                    </p>
                     <div class="hero__stats">
                         <div class="hero__stat">
-                            <span class="hero__stat-number" data-count="6">0</span>
-                            <span class="hero__stat-label">Months Exp.</span>
+                            <span class="hero__stat-number" data-count="6">6</span>
+                            <span class="hero__stat-label" data-i18n="hero.statMonths">เดือนประสบการณ์</span>
                         </div>
                         <div class="hero__stat-divider"></div>
                         <div class="hero__stat">
-                            <span class="hero__stat-number" data-count="7">0</span>
-                            <span class="hero__stat-label">Projects</span>
+                            <span class="hero__stat-number" data-count="7">7</span>
+                            <span class="hero__stat-label" data-i18n="hero.statProjects">โปรเจกต์</span>
                         </div>
                         <div class="hero__stat-divider"></div>
                         <div class="hero__stat">
-                            <span class="hero__stat-number" data-count="23">0</span>
-                            <span class="hero__stat-label">Tools</span>
+                            <span class="hero__stat-number" data-count="12">12</span>
+                            <span class="hero__stat-label" data-i18n="hero.statTech">เทคโนโลยี</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Right: Profile Image -->
+                <!-- Right: Hero Visual -->
                 <div class="hero__image-wrapper">
-                    <div class="hero__image-ring"></div>
-                    <div class="hero__image">
-                        <img src="https://placehold.co/400x400/7B0D1E/FFFFFF?text=PIPO&font=poppins"
-                            alt="PIPO Profile Photo">
-                    </div>
-                    <div class="hero__badge hero__badge--1">
-                        <div class="hero__badge-icon"><i class="fas fa-code"></i></div>
-                        <span>Frontend Dev</span>
-                    </div>
-                    <!-- 
-                    <div class="hero__badge hero__badge--2">
-                        <div class="hero__badge-icon"><i class="fas fa-palette"></i></div>
-                        <span>UX/UI Designer</span>
-                    </div>
-                    -->
-                    <div class="hero__badge hero__badge--3">
-                        <div class="hero__badge-icon"><i class="fas fa-mobile-screen-button"></i></div>
-                        <span>Mobile Developer</span>
+                    <div class="hero__image hero__image--code">
+                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" aria-label="Code illustration" role="img">
+                            <!-- Editor background -->
+                            <rect width="300" height="300" fill="#0F1117"/>
+                            <!-- Title bar -->
+                            <rect width="300" height="32" fill="#1A1D27"/>
+                            <circle cx="18" cy="16" r="5" fill="#FF5F57"/>
+                            <circle cx="34" cy="16" r="5" fill="#FFBD2E"/>
+                            <circle cx="50" cy="16" r="5" fill="#28CA41"/>
+                            <rect x="90" y="10" width="120" height="12" rx="3" fill="#252836" opacity=".9"/>
+                            <text x="150" y="20" text-anchor="middle" font-size="7.5" fill="#6B7280" font-family="monospace">index.tsx</text>
+                            <!-- Line numbers gutter -->
+                            <rect x="0" y="32" width="28" height="268" fill="#12141D"/>
+                            <!-- Code lines -->
+                            <!-- Line 1 -->
+                            <text x="14" y="58" text-anchor="middle" font-size="8" fill="#3A3D50" font-family="monospace">1</text>
+                            <text x="38" y="58" font-size="9" fill="#C678DD" font-family="monospace">import</text>
+                            <text x="78" y="58" font-size="9" fill="#ABB2BF" font-family="monospace"> React </text>
+                            <text x="110" y="58" font-size="9" fill="#C678DD" font-family="monospace">from</text>
+                            <text x="134" y="58" font-size="9" fill="#98C379" font-family="monospace"> 'react'</text>
+                            <!-- Line 2 -->
+                            <text x="14" y="74" text-anchor="middle" font-size="8" fill="#3A3D50" font-family="monospace">2</text>
+                            <text x="38" y="74" font-size="9" fill="#C678DD" font-family="monospace">import</text>
+                            <text x="78" y="74" font-size="9" fill="#ABB2BF" font-family="monospace"> styled </text>
+                            <text x="120" y="74" font-size="9" fill="#C678DD" font-family="monospace">from</text>
+                            <text x="144" y="74" font-size="9" fill="#98C379" font-family="monospace"> 'styled'</text>
+                            <!-- Line 3 blank -->
+                            <text x="14" y="90" text-anchor="middle" font-size="8" fill="#3A3D50" font-family="monospace">3</text>
+                            <!-- Line 4 -->
+                            <text x="14" y="106" text-anchor="middle" font-size="8" fill="#3A3D50" font-family="monospace">4</text>
+                            <text x="38" y="106" font-size="9" fill="#61AFEF" font-family="monospace">const</text>
+                            <text x="70" y="106" font-size="9" fill="#E5C07B" font-family="monospace"> App</text>
+                            <text x="92" y="106" font-size="9" fill="#56B6C2" font-family="monospace"> = () =&gt;</text>
+                            <text x="140" y="106" font-size="9" fill="#ABB2BF" font-family="monospace"> &#123;&#125;</text>
+                            <!-- Line 5 -->
+                            <text x="14" y="122" text-anchor="middle" font-size="8" fill="#3A3D50" font-family="monospace">5</text>
+                            <text x="46" y="122" font-size="9" fill="#C678DD" font-family="monospace">return</text>
+                            <text x="88" y="122" font-size="9" fill="#ABB2BF" font-family="monospace">(</text>
+                            <!-- Line 6 — highlighted active line -->
+                            <rect x="28" y="127" width="272" height="14" fill="#7B0D1E" opacity=".18"/>
+                            <text x="14" y="138" text-anchor="middle" font-size="8" fill="#7B0D1E" font-family="monospace">6</text>
+                            <text x="56" y="138" font-size="9" fill="#E06C75" font-family="monospace">&lt;div</text>
+                            <text x="83" y="138" font-size="9" fill="#E5C07B" font-family="monospace"> className</text>
+                            <text x="145" y="138" font-size="9" fill="#56B6C2" font-family="monospace">=</text>
+                            <text x="153" y="138" font-size="9" fill="#98C379" font-family="monospace">"hero"</text>
+                            <text x="192" y="138" font-size="9" fill="#E06C75" font-family="monospace">&gt;</text>
+                            <!-- Cursor blink on line 6 — uses CSS class so prefers-reduced-motion can stop it -->
+                            <rect x="200" y="128" width="2" height="11" fill="#7B0D1E" opacity=".9" class="svg-blink">
+                                <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/>
+                            </rect>
+                            <!-- Line 7 -->
+                            <text x="14" y="154" text-anchor="middle" font-size="8" fill="#3A3D50" font-family="monospace">7</text>
+                            <text x="56" y="154" font-size="9" fill="#E06C75" font-family="monospace">&lt;h1&gt;</text>
+                            <text x="89" y="154" font-size="9" fill="#ABB2BF" font-family="monospace">Hello World</text>
+                            <text x="157" y="154" font-size="9" fill="#E06C75" font-family="monospace">&lt;/h1&gt;</text>
+                            <!-- Line 8 -->
+                            <text x="14" y="170" text-anchor="middle" font-size="8" fill="#3A3D50" font-family="monospace">8</text>
+                            <text x="56" y="170" font-size="9" fill="#E06C75" font-family="monospace">&lt;/div&gt;</text>
+                            <!-- Line 9 -->
+                            <text x="14" y="186" text-anchor="middle" font-size="8" fill="#3A3D50" font-family="monospace">9</text>
+                            <text x="46" y="186" font-size="9" fill="#ABB2BF" font-family="monospace">)</text>
+                            <!-- Line 10 -->
+                            <text x="14" y="202" text-anchor="middle" font-size="8" fill="#3A3D50" font-family="monospace">10</text>
+                            <text x="38" y="202" font-size="9" fill="#ABB2BF" font-family="monospace">&#125;</text>
+                            <!-- Line 11 blank -->
+                            <text x="14" y="218" text-anchor="middle" font-size="8" fill="#3A3D50" font-family="monospace">11</text>
+                            <!-- Line 12 -->
+                            <text x="14" y="234" text-anchor="middle" font-size="8" fill="#3A3D50" font-family="monospace">12</text>
+                            <text x="38" y="234" font-size="9" fill="#C678DD" font-family="monospace">export default</text>
+                            <text x="131" y="234" font-size="9" fill="#E5C07B" font-family="monospace"> App</text>
+                            <!-- Bottom status bar -->
+                            <rect x="0" y="275" width="300" height="25" fill="#7B0D1E" opacity=".85"/>
+                            <text x="12" y="291" font-size="7.5" fill="rgba(255,255,255,.8)" font-family="monospace">TypeScript JSX</text>
+                            <text x="190" y="291" font-size="7.5" fill="rgba(255,255,255,.6)" font-family="monospace">Ln 6, Col 32</text>
+                            <text x="258" y="291" font-size="7.5" fill="rgba(255,255,255,.6)" font-family="monospace">UTF-8</text>
+                        </svg>
                     </div>
                 </div>
-            </div>
-
-            <!-- Scroll Indicator -->
-            <div class="hero__scroll">
-                <a href="#about" aria-label="Scroll to About">
-                    <div class="hero__scroll-mouse">
-                        <div class="hero__scroll-wheel"></div>
-                    </div>
-                    <span>Scroll Down</span>
-                </a>
             </div>
         </section>
 
@@ -141,62 +202,61 @@
         <section class="about section-padding bg-light" id="about">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Who I Am</span>
-                    <h2 class="section-title">About <span>Me</span></h2>
-                    <div class="section-line"></div>
+                    <h2 class="section-title" data-i18n-html="about.title">เกี่ยวกับ<span>ฉัน</span></h2>
+                    <p class="section-subtitle" data-i18n="about.subtitle">Junior Frontend &amp; Flutter Developer · มหาวิทยาลัยราชภัฏเชียงใหม่</p>
                 </div>
                 <div class="about__grid">
                     <!-- Bio Content -->
                     <div class="about__content">
-                        <h3 class="about__subtitle">Junior Frontend & Flutter Developer</h3>
-                        <p class="about__desc">
+                        <h3 class="about__subtitle" data-i18n="about.role">Junior Frontend &amp; Flutter Developer</h3>
+                        <p class="about__desc" data-i18n-html="about.desc1">
                             สวัสดีค่ะ! ฉันชื่อ <strong>ธีรนาฏ เป็นใย (ปีโป้)</strong> นักพัฒนา Frontend Developer และ
                             Mobile Development
                             ระดับเริ่มต้น มีพื้นฐานด้าน HTML, CSS และ Dart ชอบสร้างเว็บไซต์และ
                             แอปพลิเคชันที่ใช้งานง่ายและตอบโจทย์ผู้ใช้จริง
                         </p>
-                        <p class="about__desc">
+                        <p class="about__desc" data-i18n="about.desc2">
                             ฉันพร้อมเรียนรู้สิ่งใหม่ ๆ และพัฒนาทักษะอยู่เสมอ ทำงานร่วมกับทีมได้ดี
                             และมุ่งมั่นที่จะเติบโตเป็นนักพัฒนาที่ส่งมอบงานคุณภาพค่ะ
                         </p>
                         <div class="about__info-grid">
                             <div class="about__info-item">
-                                <i class="fas fa-user"></i>
+                                <i class="fas fa-user" aria-hidden="true"></i>
                                 <div>
-                                    <span class="info-label">ชื่อเล่น</span>
+                                    <span class="info-label" data-i18n="about.info.nickname">ชื่อเล่น</span>
                                     <span class="info-value">ปีโป้ (PIPO)</span>
                                 </div>
                             </div>
                             <div class="about__info-item">
-                                <i class="fas fa-map-marker-alt"></i>
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                                 <div>
-                                    <span class="info-label">ที่อยู่</span>
-                                    <span class="info-value">นนทบุรี, ประเทศไทย</span>
+                                    <span class="info-label" data-i18n="about.info.location">ที่อยู่</span>
+                                    <span class="info-value" data-i18n="about.info.locationValue">นนทบุรี, ประเทศไทย</span>
                                 </div>
                             </div>
                             <div class="about__info-item">
-                                <i class="fas fa-envelope"></i>
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
                                 <div>
-                                    <span class="info-label">อีเมล</span>
+                                    <span class="info-label" data-i18n="about.info.email">อีเมล</span>
                                     <span class="info-value">theeranat.penyai14@gmail.com</span>
                                 </div>
                             </div>
                             <div class="about__info-item">
-                                <i class="fas fa-phone"></i>
+                                <i class="fas fa-phone" aria-hidden="true"></i>
                                 <div>
-                                    <span class="info-label">โทรศัพท์</span>
+                                    <span class="info-label" data-i18n="about.info.phone">โทรศัพท์</span>
                                     <span class="info-value">094-360-5112</span>
                                 </div>
                             </div>
                             <div class="about__info-item">
-                                <i class="fas fa-graduation-cap"></i>
+                                <i class="fas fa-graduation-cap" aria-hidden="true"></i>
                                 <div>
-                                    <span class="info-label">การศึกษา</span>
-                                    <span class="info-value">IT · มรภ.เชียงใหม่</span>
+                                    <span class="info-label" data-i18n="about.info.education">การศึกษา</span>
+                                    <span class="info-value" data-i18n="about.info.educationValue">IT · มรภ.เชียงใหม่</span>
                                 </div>
                             </div>
                             <div class="about__info-item">
-                                <i class="fab fa-line"></i>
+                                <i class="fab fa-line" aria-hidden="true"></i>
                                 <div>
                                     <span class="info-label">LINE</span>
                                     <span class="info-value">teeranat_14</span>
@@ -207,18 +267,18 @@
                     <!-- What I Do -->
                     <div class="about__services">
                         <div class="about__service">
-                            <div class="about__service-icon"><i class="fas fa-code"></i></div>
+                            <div class="about__service-icon"><i class="fas fa-code" aria-hidden="true"></i></div>
                             <div>
                                 <h4 class="about__service-title">Web Development</h4>
-                                <p class="about__service-desc">พัฒนาเว็บไซต์ด้วย HTML, CSS, JavaScript, React และ
+                                <p class="about__service-desc" data-i18n="about.service.webDesc">พัฒนาเว็บไซต์ด้วย HTML, CSS, JavaScript, React และ
                                     Next.js ให้ใช้งานง่ายและรองรับทุกอุปกรณ์</p>
                             </div>
                         </div>
                         <div class="about__service">
-                            <div class="about__service-icon"><i class="fas fa-mobile-screen-button"></i></div>
+                            <div class="about__service-icon"><i class="fas fa-mobile-screen-button" aria-hidden="true"></i></div>
                             <div>
                                 <h4 class="about__service-title">Mobile Development</h4>
-                                <p class="about__service-desc">สร้างแอปพลิเคชันมือถือด้วย Flutter (Dart) ใช้งานได้ทั้ง
+                                <p class="about__service-desc" data-i18n="about.service.mobileDesc">สร้างแอปพลิเคชันมือถือด้วย Flutter (Dart) ใช้งานได้ทั้ง
                                     Android และ iOS</p>
                             </div>
                         </div>
@@ -240,17 +300,17 @@
         <section class="skills section-padding bg-white" id="skills">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">What I Know</span>
-                    <h2 class="section-title">My <span>Skills</span></h2>
-                    <div class="section-line"></div>
+                    <h2 class="section-title" data-i18n-html="skills.title">ทักษะ<span>หลัก</span></h2>
+                    <p class="section-subtitle" data-i18n="skills.subtitle">เทคโนโลยีที่ใช้งานในโปรเจกต์จริง</p>
                 </div>
                 <div class="skills__grid">
                     <!-- Skill Categories -->
                     <div class="skills__cards-col">
-                        <h3 class="skills__col-title">Tools & Technologies</h3>
+                        <h3 class="skills__col-title" data-i18n="skills.colTitle">เทคโนโลยีที่ใช้งาน</h3>
                         <div class="skill-groups">
 
                             <div class="skill-group">
+                                <h4 class="skill-group__title"><i class="fas fa-code" aria-hidden="true"></i> Frontend</h4>
                                 <div class="skill-cards">
                                     <div class="skill-card">
                                         <div class="skill-card__icon"><i class="fab fa-html5"></i></div>
@@ -265,6 +325,10 @@
                                         <span class="skill-card__name">JavaScript</span>
                                     </div>
                                     <div class="skill-card">
+                                        <div class="skill-card__icon"><i class="fas fa-code"></i></div>
+                                        <span class="skill-card__name">TypeScript</span>
+                                    </div>
+                                    <div class="skill-card">
                                         <div class="skill-card__icon"><i class="fab fa-bootstrap"></i></div>
                                         <span class="skill-card__name">Bootstrap</span>
                                     </div>
@@ -276,7 +340,7 @@
                             </div>
 
                             <div class="skill-group">
-                                <h4 class="skill-group__title"><i class="fas fa-cubes"></i> Frameworks</h4>
+                                <h4 class="skill-group__title"><i class="fas fa-cubes" aria-hidden="true"></i> Frameworks</h4>
                                 <div class="skill-cards">
                                     <div class="skill-card">
                                         <div class="skill-card__icon"><i class="fab fa-react"></i></div>
@@ -290,12 +354,16 @@
                                         <div class="skill-card__icon"><i class="fas fa-mobile-screen-button"></i></div>
                                         <span class="skill-card__name">Flutter</span>
                                     </div>
+                                    <div class="skill-card">
+                                        <div class="skill-card__icon"><i class="fab fa-node-js"></i></div>
+                                        <span class="skill-card__name">Node.js</span>
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="skill-group">
-                                <h4 class="skill-group__title"><i class="fas fa-screwdriver-wrench"></i> Tools<span class="hero__cursor">|</span></h4>
-                                <div class="skill-cards"> 
+                                <h4 class="skill-group__title"><i class="fas fa-screwdriver-wrench" aria-hidden="true"></i> Tools</h4>
+                                <div class="skill-cards">
                                     <div class="skill-card">
                                         <div class="skill-card__icon"><i class="fab fa-figma"></i></div>
                                         <span class="skill-card__name">Figma</span>
@@ -304,7 +372,7 @@
                                         <div class="skill-card__icon"><i class="fas fa-file-code"></i></div>
                                         <span class="skill-card__name">VS Code</span>
                                     </div>
-                                      <div class="skill-card">
+                                    <div class="skill-card">
                                         <div class="skill-card__icon"><i class="fas fa-wand-magic-sparkles"></i></div>
                                         <span class="skill-card__name">Cursor</span>
                                     </div>
@@ -316,23 +384,11 @@
                                         <div class="skill-card__icon"><i class="fab fa-docker"></i></div>
                                         <span class="skill-card__name">Docker</span>
                                     </div>
-                                    <div class="skill-card">
-                                        <div class="skill-card__icon"><i class="fas fa-server"></i></div>
-                                        <span class="skill-card__name">Navicat</span>
-                                    </div>
-                                    <div class="skill-card">
-                                        <div class="skill-card__icon"><i class="fas fa-scissors"></i></div>
-                                        <span class="skill-card__name">CapCut</span>
-                                    </div>
-                                    <div class="skill-card">
-                                        <div class="skill-card__icon"><i class="fas fa-diagram-project"></i></div>
-                                        <span class="skill-card__name">n8n</span>
-                                    </div>
                                 </div>
                             </div>
 
                             <div class="skill-group">
-                                <h4 class="skill-group__title"><i class="fas fa-hard-drive"></i> Database</h4>
+                                <h4 class="skill-group__title"><i class="fas fa-hard-drive" aria-hidden="true"></i> Database</h4>
                                 <div class="skill-cards">
                                     <div class="skill-card">
                                         <div class="skill-card__icon"><i class="fas fa-database"></i></div>
@@ -353,46 +409,6 @@
                                 </div>
                             </div>
 
-                            <div class="skill-group">
-                                <h4 class="skill-group__title"><i class="fas fa-wand-magic-sparkles"></i> AI Tools</h4>
-                                <div class="skill-cards">
-                                    <div class="skill-card">
-                                        <div class="skill-card__icon"><i class="fas fa-robot"></i></div>
-                                        <span class="skill-card__name">ChatGPT</span>
-                                    </div>
-                                    <div class="skill-card">
-                                        <div class="skill-card__icon"><i class="fas fa-brain"></i></div>
-                                        <span class="skill-card__name">Claude</span>
-                                    </div>
-                                    <div class="skill-card">
-                                        <div class="skill-card__icon"><i class="fas fa-gem"></i></div>
-                                        <span class="skill-card__name">Gemini</span>
-                                    </div>
-                                    <div class="skill-card">
-                                        <div class="skill-card__icon"><i class="fas fa-terminal"></i></div>
-                                        <span class="skill-card__name">Codex</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skill-group">
-                                <h4 class="skill-group__title"><i class="fas fa-briefcase"></i> Microsoft Office</h4>
-                                <div class="skill-cards">
-                                    <div class="skill-card">
-                                        <div class="skill-card__icon"><i class="fas fa-file-word"></i></div>
-                                        <span class="skill-card__name">Word</span>
-                                    </div>
-                                    <div class="skill-card">
-                                        <div class="skill-card__icon"><i class="fas fa-file-excel"></i></div>
-                                        <span class="skill-card__name">Excel</span>
-                                    </div>
-                                    <div class="skill-card">
-                                        <div class="skill-card__icon"><i class="fas fa-file-powerpoint"></i></div>
-                                        <span class="skill-card__name">PowerPoint</span>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
                 </div>
@@ -403,14 +419,13 @@
         <section class="experience section-padding bg-light" id="experience">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">My Journey</span>
-                    <h2 class="section-title">Experience & <span>Education</span></h2>
-                    <div class="section-line"></div>
+                    <h2 class="section-title" data-i18n-html="experience.title">ประสบการณ์ &amp; <span>การศึกษา</span></h2>
+                    <p class="section-subtitle" data-i18n="experience.subtitle">เส้นทางการเรียนรู้และประสบการณ์ทำงาน</p>
                 </div>
                 <div class="experience__grid">
                     <!-- Work Experience -->
                     <div>
-                        <h3 class="exp__col-title"><i class="fas fa-briefcase"></i> Work Experience</h3>
+                        <h3 class="exp__col-title"><i class="fas fa-briefcase" aria-hidden="true"></i> <span data-i18n="experience.work">ประสบการณ์ทำงาน</span></h3>
                         <div class="timeline">
                             <!-- ซ่อนส่วน Freelance ไว้ชั่วคราว
                             <div class="timeline__item">
@@ -431,13 +446,13 @@
                             <div class="timeline__item">
                                 <div class="timeline__dot"></div>
                                 <div class="timeline__card">
-                                    <span class="timeline__year">13 ก.พ. 2569 – 30 มี.ค. 2569</span>
-                                    <h4 class="timeline__role">AI Developer</h4>
-                                    <span class="timeline__org">บริษัท spacegym</span>
-                                    <ul class="timeline__desc" style="list-style: none; padding-left: 0;">
-                                        <li>• พัฒนา Dashboard องค์กรด้วย Next.js และ Firebase (Database/Console)</li>
-                                        <li>• ออกแบบและเชื่อมต่อระบบ Webhook ร่วมกับ LINE OA และ Facebook</li>
-                                        <li>• ประยุกต์ใช้ AI เป็นเครื่องมือหลัก ในการเขียนโค้ดและเพิ่มประสิทธิภาพการพัฒนา</li>
+                                    <span class="timeline__year" data-i18n="exp1.year">13 ก.พ. 2569 – 30 มี.ค. 2569</span>
+                                    <h4 class="timeline__role" data-i18n="exp1.role">AI Developer</h4>
+                                    <span class="timeline__org" data-i18n="exp1.org">บริษัท spacegym</span>
+                                    <ul class="timeline__desc">
+                                        <li data-i18n="exp1.li1">พัฒนา Dashboard องค์กรด้วย Next.js และ Firebase (Database/Console)</li>
+                                        <li data-i18n="exp1.li2">ออกแบบและเชื่อมต่อระบบ Webhook ร่วมกับ LINE OA และ Facebook</li>
+                                        <li data-i18n="exp1.li3">ประยุกต์ใช้ AI เป็นเครื่องมือหลัก ในการเขียนโค้ดและเพิ่มประสิทธิภาพการพัฒนา</li>
                                     </ul>
                                 </div>
                             </div>
@@ -445,13 +460,13 @@
                             <div class="timeline__item">
                                 <div class="timeline__dot"></div>
                                 <div class="timeline__card">
-                                    <span class="timeline__year">28 พ.ย. 2566 – 28 ก.พ. 2567</span>
-                                    <h4 class="timeline__role">Report </h4>
-                                    <span class="timeline__org">บริษัท NECO (เชียงใหม่)</span>
-                                    <ul class="timeline__desc" style="list-style: none; padding-left: 0;">
-                                        <li>• จัดทำรายงานสรุปผลสัญญาณโทรศัพท์เคลื่อนที่จากการทดสอบภาคสนาม (Field Test)</li>
-                                        <li>• ประมวลผลและตรวจสอบข้อมูลผ่านระบบเว็บแอปพลิเคชันภายในบริษัท</li>
-                                        <li>• สรุปผลการทดสอบผ่าน Microsoft Excel เพื่อส่งต่อรายงานตามขั้นตอนการดำเนินงานของทีม</li>
+                                    <span class="timeline__year" data-i18n="exp2.year">28 พ.ย. 2566 – 28 ก.พ. 2567</span>
+                                    <h4 class="timeline__role" data-i18n="exp2.role">IT Report &amp; Field Test</h4>
+                                    <span class="timeline__org" data-i18n="exp2.org">บริษัท NECO (เชียงใหม่)</span>
+                                    <ul class="timeline__desc">
+                                        <li data-i18n="exp2.li1">จัดทำรายงานสรุปผลสัญญาณโทรศัพท์เคลื่อนที่จากการทดสอบภาคสนาม (Field Test)</li>
+                                        <li data-i18n="exp2.li2">ประมวลผลและตรวจสอบข้อมูลผ่านระบบเว็บแอปพลิเคชันภายในบริษัท</li>
+                                        <li data-i18n="exp2.li3">สรุปผลการทดสอบผ่าน Microsoft Excel เพื่อส่งต่อรายงานตามขั้นตอนการดำเนินงานของทีม</li>
                                     </ul>
                                 </div>
                             </div>
@@ -459,13 +474,13 @@
                             <div class="timeline__item">
                                 <div class="timeline__dot"></div>
                                 <div class="timeline__card">
-                                    <span class="timeline__year">30 ต.ค. 2565 – 13 ก.พ. 2566</span>
-                                    <h4 class="timeline__role">Programmer & IT Support</h4>
-                                    <span class="timeline__org">สถาบันพัฒนาการเด็กราชนครินทร์ เชียงใหม่</span>
-                                    <ul class="timeline__desc" style="list-style: none; padding-left: 0;">
-                                    <li>• พัฒนาและดูแลส่วนหน้า (Frontend) ของระบบบริหารจัดการโรงพยาบาลด้วย React.js</li>
-                                    <li>• ออกแบบ UI และพัฒนาโมบายแอปพลิเคชัน (E-commerce & News) ด้วย Flutter</li>
-                                    <li>• รับผิดชอบงาน IT Support แก้ไขปัญหาทางเทคนิคและบำรุงรักษาอุปกรณ์คอมพิวเตอร์ภายในองค์กร</li>
+                                    <span class="timeline__year" data-i18n="exp3.year">30 ต.ค. 2565 – 13 ก.พ. 2566</span>
+                                    <h4 class="timeline__role" data-i18n="exp3.role">Programmer &amp; IT Support</h4>
+                                    <span class="timeline__org" data-i18n="exp3.org">สถาบันพัฒนาการเด็กราชนครินทร์ เชียงใหม่</span>
+                                    <ul class="timeline__desc">
+                                    <li data-i18n="exp3.li1">พัฒนาและดูแลส่วนหน้า (Frontend) ของระบบบริหารจัดการโรงพยาบาลด้วย React.js</li>
+                                    <li data-i18n="exp3.li2">ออกแบบ UI และพัฒนาโมบายแอปพลิเคชัน (E-commerce &amp; News) ด้วย Flutter</li>
+                                    <li data-i18n="exp3.li3">รับผิดชอบงาน IT Support แก้ไขปัญหาทางเทคนิคและบำรุงรักษาอุปกรณ์คอมพิวเตอร์ภายในองค์กร</li>
                                     </ul>
                                 </div>
                             </div>
@@ -473,15 +488,15 @@
                     </div>
                     <!-- Education -->
                     <div>
-                        <h3 class="exp__col-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+                        <h3 class="exp__col-title"><i class="fas fa-graduation-cap" aria-hidden="true"></i> <span data-i18n="experience.education">การศึกษา</span></h3>
                         <div class="timeline">
                             <div class="timeline__item">
                                 <div class="timeline__dot"></div>
                                 <div class="timeline__card">
-                                    <span class="timeline__year">2566</span>
-                                    <h4 class="timeline__role">ปริญญาตรี เทคโนโลยีสารสนเทศ</h4>
-                                    <span class="timeline__org">มหาวิทยาลัยราชภัฏเชียงใหม่</span>
-                                    <p class="timeline__desc">
+                                    <span class="timeline__year" data-i18n="edu1.year">2566</span>
+                                    <h4 class="timeline__role" data-i18n="edu1.role">ปริญญาตรี เทคโนโลยีสารสนเทศ</h4>
+                                    <span class="timeline__org" data-i18n="edu1.org">มหาวิทยาลัยราชภัฏเชียงใหม่</span>
+                                    <p class="timeline__desc" data-i18n="edu1.desc">
                                         สำเร็จการศึกษาระดับปริญญาตรี สาขาเทคโนโลยีสารสนเทศ มหาวิทยาลัยราชภัฏเชียงใหม่
                                         ระหว่างวันที่ 24 มิถุนายน 2562 - 28 พฤศจิกายน 2566
                                     </p>
@@ -496,56 +511,29 @@
         <!-- ===== PROJECTS SECTION ===== -->
         <section class="projects section-padding bg-white" id="projects">
             <div class="container">
-                <div class="section-header">
-                    <span class="section-tag">My Work</span>
-                    <h2 class="section-title">Recent <span>Projects</span></h2>
-                    <div class="section-line"></div>
+                <div class="section-header section-header--wide">
+                    <h2 class="section-title" data-i18n-html="projects.title">โปรเจกต์<span>ล่าสุด</span></h2>
+                    <p class="section-subtitle" data-i18n="projects.subtitle">4 โปรเจกต์หลักที่เน้นทักษะ Full-stack และการทำงานจริง</p>
                 </div>
                 <div class="projects__grid">
 
-                    <article class="project-card">
+                    <article class="project-card project-card--featured">
                         <div class="project-card__img">
-                            <img src="imges/Screenshot%202026-06-15%20180318.png"
-                                alt="Hospital Schedule Management System">
-                            <span class="project-card__type">เว็บแอปพลิเคชัน</span>
+                            <img src="images/Screenshot%202026-06-15%20191521.png"
+                                alt="Online Meeting Management System"
+                                loading="lazy" decoding="async">
+                            <span class="project-card__badge" data-i18n="projects.featuredBadge">โปรเจกต์เด่น</span>
+                            <span class="project-card__type" data-i18n="projects.typeWebApp">เว็บแอปพลิเคชัน</span>
                             <div class="project-card__overlay">
-                                <a href="https://hospital1414.infinityfreeapp.com/" target="_blank" rel="noopener"
-                                    class="btn btn--white">View Project <i class="fas fa-arrow-right"></i></a>
+                                <a href="https://meeting-app-lake-five.vercel.app/" target="_blank" rel="noopener"
+                                    class="btn btn--white"><span data-i18n="projects.viewProject">ดูโปรเจกต์</span> <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                             </div>
                         </div>
                         <div class="project-card__body">
-                            <h3 class="project-card__title">ระบบจัดการตารางเวรพยาบาล</h3>
+                            <h3 class="project-card__title" data-i18n="proj1.title">ระบบจัดการการประชุมออนไลน์ (Meeting App)</h3>
                             <ul class="project-card__desc">
-                                <li>โปรเจกต์จบปี 2566 · เทคโนโลยีสารสนเทศ มรภ.เชียงใหม่</li>
-                                <li>เว็บแอปจัดการและแลกเปลี่ยนเวรพยาบาล — จัดตารางเวร ขอแลกเวร
-                                    พร้อมระบบอนุมัติและติดตามสถานะ</li>
-                                <li>มีระบบสมาชิก/กำหนดสิทธิ์ผู้ใช้-แอดมิน และจัดการข้อมูล OT พร้อมรายงานสรุป</li>
-                            </ul>
-                            <div class="project-card__tags">
-                                <span class="tag">Bootstrap</span>
-                                <span class="tag">PHP</span>
-                                <span class="tag">MySQL</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-card__img">
-                            <img src="imges/Screenshot%202026-06-15%20191521.png"
-                                alt="Online Meeting Management System">
-                            <span class="project-card__type">เว็บแอปพลิเคชัน</span>
-                            <div class="project-card__overlay">
-                                <a href="https://meeting-app-lake-five.vercel.app/" target="_blank" rel="noopener" class="btn btn--white">View Project <i class="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                        <div class="project-card__body">
-                            <h3 class="project-card__title">ระบบจัดการการประชุมออนไลน์ (Meeting App)</h3>
-                            <ul class="project-card__desc">
-                                <li>เว็บแอปจัดการการประชุมภายในองค์กร — สร้าง/แก้ไข/ลบการประชุม พร้อม QR Code
-                                    เช็คชื่อผู้เข้าร่วมและ Export รายงาน</li>
-                                <li>มีระบบสมาชิก/กำหนดสิทธิ์ผู้ใช้แบบ RBAC (Admin, User, Custom Role) พร้อมระบบ Roles
-                                    &amp; Permissions ละเอียดในแต่ละหมวด</li>
-                                <li>มีระบบบันทึกรายงานการประชุม, จัดการ OT, ปฏิทิน และ Dashboard ตั้งค่าระบบ</li>
+                                <li data-i18n="proj1.li1">จัดการประชุมภายในองค์กร พร้อม QR Code เช็คชื่อและ Export รายงาน</li>
+                                <li data-i18n="proj1.li2">ระบบ RBAC, ปฏิทิน, Dashboard และจัดการ OT ครบในแพลตฟอร์มเดียว</li>
                             </ul>
                             <div class="project-card__tags">
                                 <span class="tag">React + TypeScript</span>
@@ -555,27 +543,23 @@
                         </div>
                     </article>
 
-                    <article class="project-card">
+                    <article class="project-card project-card--featured">
                         <div class="project-card__img">
-                            <img src="imges/Screenshot%202026-06-15%20192130.png"
-                                alt="NEXUS CHAMPIONSHIP 2025 eSports Ticket Booking Platform">
-                            <span class="project-card__type">เว็บแอปพลิเคชัน</span>
+                            <img src="images/Screenshot%202026-06-15%20192130.png"
+                                alt="NEXUS CHAMPIONSHIP 2025 eSports Ticket Booking Platform"
+                                loading="lazy" decoding="async">
+                            <span class="project-card__badge" data-i18n="projects.featuredBadge">โปรเจกต์เด่น</span>
+                            <span class="project-card__type" data-i18n="projects.typeWebApp">เว็บแอปพลิเคชัน</span>
                             <div class="project-card__overlay">
                                 <a href="https://book-tickets-tan.vercel.app/" target="_blank" rel="noopener"
-                                    class="btn btn--white">View Project <i class="fas fa-arrow-right"></i></a>
+                                    class="btn btn--white"><span data-i18n="projects.viewProject">ดูโปรเจกต์</span> <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                             </div>
                         </div>
                         <div class="project-card__body">
-                            <h3 class="project-card__title">แพลตฟอร์มจองตั๋วการแข่งขัน eSports (NEXUS CHAMPIONSHIP 2025)
-                            </h3>
+                            <h3 class="project-card__title" data-i18n="proj2.title">แพลตฟอร์มจองตั๋ว eSports (NEXUS CHAMPIONSHIP 2025)</h3>
                             <ul class="project-card__desc">
-                                <li>เว็บแอปจองตั๋ว eSports แบบครบวงจร — เลือกแมตช์ เลือกที่นั่งจากผังจริง
-                                    (VIP/Premium/Regular) อัปโหลดสลิปชำระเงิน และรับตั๋ว QR Code พร้อม Hold
-                                    ที่นั่งอัตโนมัติ 15 นาที</li>
-                                <li>มีระบบ Admin จัดการอีเวนต์/แมตช์/ผู้ใช้ ยืนยันการชำระเงิน เช็คอินหน้างานผ่าน QR
-                                    และส่งอีเมลแจ้งสถานะ</li>
-                                <li>มี LINE Bot (read-only ผ่าน n8n) ให้ผู้ใช้ดูแมตช์และเช็คตั๋วผ่านแชต LINE
-                                    โดยไม่ต้องเปิดเว็บ</li>
+                                <li data-i18n="proj2.li1">จองที่นั่งจากผังจริง อัปโหลดสลิป และรับตั๋ว QR Code พร้อม Hold ที่นั่ง 15 นาที</li>
+                                <li data-i18n="proj2.li2">Admin ยืนยันชำระเงิน เช็คอินหน้างาน และเชื่อม LINE Bot ดูตั๋วผ่านแชต</li>
                             </ul>
                             <div class="project-card__tags">
                                 <span class="tag">Next.js</span>
@@ -586,24 +570,22 @@
                         </div>
                     </article>
 
-                    <article class="project-card">
+                    <article class="project-card project-card--featured">
                         <div class="project-card__img">
-                            <img src="imges/Screenshot%202026-06-15%20192834.png" alt="Game Store Online">
-                            <span class="project-card__type">เว็บแอปพลิเคชัน</span>
+                            <img src="images/Screenshot%202026-06-15%20192834.png" alt="Game Store Online"
+                                loading="lazy" decoding="async">
+                            <span class="project-card__badge" data-i18n="projects.featuredBadge">โปรเจกต์เด่น</span>
+                            <span class="project-card__type" data-i18n="projects.typeWebApp">เว็บแอปพลิเคชัน</span>
                             <div class="project-card__overlay">
                                 <a href="https://game-stor-woad.vercel.app/" target="_blank" rel="noopener"
-                                    class="btn btn--white">View Project <i class="fas fa-arrow-right"></i></a>
+                                    class="btn btn--white"><span data-i18n="projects.viewProject">ดูโปรเจกต์</span> <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                             </div>
                         </div>
                         <div class="project-card__body">
-                            <h3 class="project-card__title">ร้านค้าเกมออนไลน์ (Game Store)</h3>
+                            <h3 class="project-card__title" data-i18n="proj3.title">ร้านค้าเกมออนไลน์ (Game Store)</h3>
                             <ul class="project-card__desc">
-                                <li>เว็บแอปร้านขายไอดีเกมและเติมเกม — มีหน้าร้านค้า, ระบบเติมเงินในเกม (Top-up),
-                                    และหน้าจัดการบัญชีเกมของผู้ใช้</li>
-                                <li>มีระบบสมาชิก (Login ผ่าน LINE), หน้าโปรไฟล์, ประวัติการซื้อ และระบบ Support พร้อม
-                                    Admin Dashboard จัดการร้าน</li>
-                                <li>มีการแจ้งเตือนทางอีเมลเมื่อเติมเงินสำเร็จ และเชื่อมต่อกับ Firebase และ Supabase เป็น
-                                    Backend</li>
+                                <li data-i18n="proj3.li1">ร้านขายไอดีเกมและเติมเกม พร้อม Login ผ่าน LINE และประวัติการซื้อ</li>
+                                <li data-i18n="proj3.li2">Admin Dashboard จัดการร้าน และแจ้งเตือนอีเมลเมื่อเติมเงินสำเร็จ</li>
                             </ul>
                             <div class="project-card__tags">
                                 <span class="tag">Next.js</span>
@@ -614,23 +596,51 @@
                         </div>
                     </article>
 
-                    <article class="project-card">
+                    <article class="project-card project-card--featured">
                         <div class="project-card__img">
-                            <img src="imges/Screenshot 2026-06-16 200935.png"
-                                alt="Q-Cut Barbershop Online Booking System">
-                            <span class="project-card__type">Landing Page</span>
+                            <img src="images/Screenshot%202026-06-15%20180318.png"
+                                alt="Hospital Schedule Management System"
+                                loading="lazy" decoding="async">
+                            <span class="project-card__badge" data-i18n="projects.featuredBadge">โปรเจกต์เด่น</span>
+                            <span class="project-card__type" data-i18n="projects.typeWebApp">เว็บแอปพลิเคชัน</span>
+                            <div class="project-card__overlay">
+                                <a href="https://hospital1414.infinityfreeapp.com/" target="_blank" rel="noopener"
+                                    class="btn btn--white"><span data-i18n="projects.viewProject">ดูโปรเจกต์</span> <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title" data-i18n="proj4.title">ระบบจัดการตารางเวรพยาบาล</h3>
+                            <ul class="project-card__desc">
+                                <li data-i18n="proj4.li1">โปรเจกต์จบ มรภ.เชียงใหม่ 2566 จัดการแลกเวรและอนุมัติตารางเวร</li>
+                                <li data-i18n="proj4.li2">ระบบสมาชิก สิทธิ์ผู้ใช้/แอดมิน และรายงาน OT</li>
+                            </ul>
+                            <div class="project-card__tags">
+                                <span class="tag">Bootstrap</span>
+                                <span class="tag">PHP</span>
+                                <span class="tag">MySQL</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <h3 class="projects__more-title" data-i18n="projects.moreTitle">Landing Page เพิ่มเติม</h3>
+                <div class="projects__grid projects__grid--more">
+
+                    <article class="project-card project-card--compact">
+                        <div class="project-card__img">
+                            <img src="images/Screenshot%202026-06-16%20200935.png"
+                                alt="Q-Cut Barbershop Online Booking System"
+                                loading="lazy" decoding="async">
+                            <span class="project-card__type" data-i18n="projects.typeLanding">Landing Page</span>
                             <div class="project-card__overlay">
                                 <a href="https://qcut-8ce06.firebaseapp.com/" target="_blank" rel="noopener"
-                                    class="btn btn--white">View Project <i class="fas fa-arrow-right"></i></a>
+                                    class="btn btn--white"><span data-i18n="projects.viewProject">ดูโปรเจกต์</span> <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                             </div>
                         </div>
                         <div class="project-card__body">
-                            <h3 class="project-card__title">Q-Cut Barbershop — ระบบจองคิวร้านตัดผมชายพรีเมียม</h3>
-                            <ul class="project-card__desc">
-                                <li>ระบบจองคิวออนไลน์ครบวงจร ลูกค้าสามารถเลือกช่าง บริการ (Signature Haircut, Skin Fade) และเวลาได้เอง พร้อมระบบยืนยันการจองทันที</li>
-                                <li>เน้นประสบการณ์ผู้ใช้ระดับพรีเมียม แสดงข้อมูลบริการแต่งหนวดเครา และแพ็กเกจดูแลครบวงจรอย่างชัดเจน</li>
-                                <li>พัฒนาด้วยเทคโนโลยี HTML, CSS, JavaScript และ Deploy บน Firebase รองรับการทำงานที่รวดเร็วและเสถียร</li>
-                            </ul>
+                            <h3 class="project-card__title">Q-Cut Barbershop</h3>
+                            <p class="project-card__desc project-card__desc--single" data-i18n="proj5.desc">ระบบจองคิวร้านตัดผม ลูกค้าเลือกช่าง บริการ และเวลาได้เอง</p>
                             <div class="project-card__tags">
                                 <span class="tag">HTML</span>
                                 <span class="tag">CSS</span>
@@ -639,24 +649,19 @@
                         </div>
                     </article>
 
-                    <article class="project-card">
+                    <article class="project-card project-card--compact">
                         <div class="project-card__img">
-                            <img src="imges/Screenshot%202026-06-15%20181234.png" alt="devdrop Online Course Website">
-                            <span class="project-card__type">Landing Page</span>
+                            <img src="images/Screenshot%202026-06-15%20181234.png" alt="devdrop Online Course Website"
+                                loading="lazy" decoding="async">
+                            <span class="project-card__type" data-i18n="projects.typeLanding">Landing Page</span>
                             <div class="project-card__overlay">
                                 <a href="https://online-course-tau-vert.vercel.app/" target="_blank" rel="noopener"
-                                    class="btn btn--white">View Project <i class="fas fa-arrow-right"></i></a>
+                                    class="btn btn--white"><span data-i18n="projects.viewProject">ดูโปรเจกต์</span> <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                             </div>
                         </div>
                         <div class="project-card__body">
-                            <h3 class="project-card__title">devdrop — เว็บคอร์สเรียนโปรแกรมมิ่งและ AI ออนไลน์</h3>
-                            <ul class="project-card__desc">
-                                <li>โปรเจกต์ Landing Page สำหรับโรงเรียนสอนโปรแกรมมิ่งและ AI ออนไลน์ · เทคโนโลยี HTML,
-                                    CSS, JavaScript ล้วน</li>
-                                <li>เว็บแสดงข้อมูลคอร์สและแพ็กเกจต่าง ๆ ตั้งแต่ระดับเริ่มต้นจนถึง AI และ Machine
-                                    Learning พร้อมฟอร์มให้ผู้สนใจกรอกข้อมูลเพื่อรับคำปรึกษา</li>
-                                <li>มีระบบสลับภาษา EN/TH, รองรับมือถือ และ Animation บนหน้าเว็บ</li>
-                            </ul>
+                            <h3 class="project-card__title" data-i18n="proj6.title">devdrop คอร์สโปรแกรมมิ่ง &amp; AI</h3>
+                            <p class="project-card__desc project-card__desc--single" data-i18n="proj6.desc">Landing Page แสดงคอร์สและแพ็กเกจ พร้อมฟอร์มรับคำปรึกษาและสลับภาษา EN/TH</p>
                             <div class="project-card__tags">
                                 <span class="tag">HTML</span>
                                 <span class="tag">CSS</span>
@@ -665,26 +670,19 @@
                         </div>
                     </article>
 
-                    <article class="project-card">
+                    <article class="project-card project-card--compact">
                         <div class="project-card__img">
-                            <img src="imges/Screenshot%202026-06-15%20203505.png" alt="AXON Robotics Landing Page">
-                            <span class="project-card__type">Landing Page</span>
+                            <img src="images/Screenshot%202026-06-15%20203505.png" alt="AXON Robotics Landing Page"
+                                loading="lazy" decoding="async">
+                            <span class="project-card__type" data-i18n="projects.typeLanding">Landing Page</span>
                             <div class="project-card__overlay">
-                                <a href="http://robot-9bb8.vercel.app/" target="_blank" rel="noopener"
-                                    class="btn btn--white">View Project <i class="fas fa-arrow-right"></i></a>
+                                <a href="https://robot-9bb8.vercel.app/" target="_blank" rel="noopener"
+                                    class="btn btn--white"><span data-i18n="projects.viewProject">ดูโปรเจกต์</span> <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                             </div>
                         </div>
                         <div class="project-card__body">
-                            <h3 class="project-card__title">AXON Robotics — Landing Page บริษัทหุ่นยนต์</h3>
-                            <ul class="project-card__desc">
-                                <li>เว็บ Landing Page สำหรับแบรนด์หุ่นยนต์ "AXON Robotics" — แสดงสินค้าหุ่นยนต์หลายรุ่น
-                                    เช่น AXON-1 Dev พร้อมสเปค (IP67 Rated, ความแม่นยำ 0.02mm, 24/7 Operation)
-                                    และข้อมูลแพลตฟอร์มวิจัย</li>
-                                <li>มีหน้า Hero พร้อมภาพ robot animation (SVG + Orbital rings), วิดีโอพื้นหลัง และ
-                                    Showcase การ์ดแสดงรุ่นหุ่นยนต์ต่าง ๆ รองรับ 2 ภาษา (EN/TH)</li>
-                                <li>ทำด้วยไฟล์ HTML ไฟล์เดียว ไม่ใช้ Framework มี CSS + JavaScript
-                                    ฝังอยู่ในไฟล์เดียวกันทั้งหมด</li>
-                            </ul>
+                            <h3 class="project-card__title">AXON Robotics</h3>
+                            <p class="project-card__desc project-card__desc--single" data-i18n="proj7.desc">Landing Page แบรนด์หุ่นยนต์ พร้อม Hero animation และ Showcase รุ่นสินค้า 2 ภาษา</p>
                             <div class="project-card__tags">
                                 <span class="tag">HTML</span>
                                 <span class="tag">CSS</span>
@@ -701,55 +699,54 @@
         <section class="contact section-padding bg-light" id="contact">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Get In Touch</span>
-                    <h2 class="section-title">Contact <span>Me</span></h2>
-                    <div class="section-line"></div>
+                    <h2 class="section-title" data-i18n-html="contact.title">ติดต่อ<span>ฉัน</span></h2>
+                    <p class="section-subtitle" data-i18n="contact.subtitle">พร้อมรับงาน Frontend และ Mobile · ตอบกลับภายใน 24 ชม.</p>
                 </div>
                 <div class="contact__grid">
                     <!-- Contact Info -->
                     <div class="contact__info">
-                        <h3 class="contact__title">Let's Work Together!</h3>
-                        <p class="contact__desc">
+                        <h3 class="contact__title" data-i18n="contact.heading">มาร่วมงานกัน!</h3>
+                        <p class="contact__desc" data-i18n="contact.desc">
                             หากคุณมีโปรเจกต์ที่น่าสนใจหรืออยากร่วมงานกัน ฉันยินดีรับฟังเสมอค่ะ
                             ส่งข้อความมาหาได้เลย!
                         </p>
                         <div class="contact__details">
                             <div class="contact__detail">
-                                <div class="contact__detail-icon"><i class="fas fa-envelope"></i></div>
+                                <div class="contact__detail-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
                                 <div>
-                                    <span class="info-label">Email</span>
+                                    <span class="info-label" data-i18n="about.info.email">อีเมล</span>
                                     <span class="info-value">theeranat.penyai14@gmail.com</span>
                                 </div>
                             </div>
                             <div class="contact__detail">
-                                <div class="contact__detail-icon"><i class="fas fa-phone"></i></div>
+                                <div class="contact__detail-icon"><i class="fas fa-phone" aria-hidden="true"></i></div>
                                 <div>
-                                    <span class="info-label">Phone</span>
+                                    <span class="info-label" data-i18n="about.info.phone">โทรศัพท์</span>
                                     <span class="info-value">094-360-5112</span>
                                 </div>
                             </div>
                             <div class="contact__detail">
-                                <div class="contact__detail-icon"><i class="fab fa-line"></i></div>
+                                <div class="contact__detail-icon"><i class="fab fa-line" aria-hidden="true"></i></div>
                                 <div>
                                     <span class="info-label">LINE</span>
                                     <span class="info-value">teeranat_14</span>
                                 </div>
                             </div>
                             <div class="contact__detail">
-                                <div class="contact__detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <div class="contact__detail-icon"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
                                 <div>
-                                    <span class="info-label">Location</span>
-                                    <span class="info-value">นนทบุรี, ประเทศไทย</span>
+                                    <span class="info-label" data-i18n="about.info.location">ที่อยู่</span>
+                                    <span class="info-value" data-i18n="about.info.locationValue">นนทบุรี, ประเทศไทย</span>
                                 </div>
                             </div>
                         </div>
-                        <h4 class="contact__social-title">Find me on</h4>
+                        <h4 class="contact__social-title" data-i18n="contact.social">ช่องทางติดต่อ</h4>
                         <div class="social-links">
                             <a href="https://line.me/ti/p/kGbT_dsTrO" target="_blank" rel="noopener" class="social-link"
                                 data-platform="line" aria-label="LINE">
                                 <i class="fab fa-line"></i>
                             </a>
-                            <a href="https://github.com/peepothrnpy11-pipo" class="social-link" data-platform="github"
+                            <a href="https://github.com/peepothrnpy11-pipo" target="_blank" rel="noopener" class="social-link" data-platform="github"
                                 aria-label="GitHub">
                                 <i class="fab fa-github"></i>
                             </a>
@@ -763,31 +760,31 @@
                             <input type="hidden" name="from_name" value="Portfolio - ธีรนาฏ เป็นใย">
                             <!-- Honeypot กันบอท: ปล่อยว่างไว้ ห้ามลบ -->
                             <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1"
-                                autocomplete="off" aria-hidden="true">
+                                aria-hidden="true">
                             <div class="form-row">
                                 <div class="form-group">
-                                    <label for="name" class="form-label">Your Name *</label>
-                                    <input type="text" id="name" name="name" class="form-input" placeholder="Your name"
+                                    <label for="name" class="form-label" data-i18n="form.name">ชื่อ *</label>
+                                    <input type="text" id="name" name="name" class="form-input" data-i18n-placeholder="form.namePlaceholder" placeholder="ชื่อของคุณ"
                                         required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="email" class="form-label">Your Email *</label>
+                                    <label for="email" class="form-label" data-i18n="form.email">อีเมล *</label>
                                     <input type="email" id="email" name="email" class="form-input"
                                         placeholder="you@example.com" required>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="subject" class="form-label">Subject</label>
-                                <input type="text" id="subject" name="subject" class="form-input"
-                                    placeholder="Project Discussion">
+                                <label for="subject" class="form-label" data-i18n="form.subject">หัวข้อ</label>
+                                <input type="text" id="subject" name="subject" class="form-input" data-i18n-placeholder="form.subjectPlaceholder"
+                                    placeholder="พูดคุยเรื่องโปรเจกต์">
                             </div>
                             <div class="form-group">
-                                <label for="message" class="form-label">Message *</label>
-                                <textarea id="message" name="message" class="form-textarea" rows="5"
-                                    placeholder="Hello, I would like to discuss..." required></textarea>
+                                <label for="message" class="form-label" data-i18n="form.message">ข้อความ *</label>
+                                <textarea id="message" name="message" class="form-textarea" rows="5" data-i18n-placeholder="form.messagePlaceholder"
+                                    placeholder="สวัสดีค่ะ อยากพูดคุยเรื่อง..." required></textarea>
                             </div>
-                            <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
-                                <i class="fas fa-paper-plane"></i> Send Message
+                            <button type="submit" class="btn btn--primary btn--full" id="submitBtn" data-i18n-aria="form.submitAria" aria-label="ส่งข้อความ">
+                                <i class="fas fa-paper-plane" aria-hidden="true"></i> <span data-i18n="form.submit">ส่งข้อความ</span>
                             </button>
                         </form>
                     </div>
@@ -803,50 +800,50 @@
             <div class="footer__top">
                 <div class="footer__brand">
                     <a href="#home" class="navbar__logo">PIPO<span>.</span></a>
-                    <p class="footer__tagline">Junior Frontend &amp; Flutter Developer · Bangkok</p>
+                    <p class="footer__tagline" data-i18n="footer.tagline">Junior Frontend &amp; Flutter Developer · นนทบุรี, ประเทศไทย</p>
                 </div>
                 <nav class="footer__nav" aria-label="Footer navigation">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#experience">Experience</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
+                    <a href="#home" data-i18n="nav.home">หน้าแรก</a>
+                    <a href="#about" data-i18n="nav.about">เกี่ยวกับ</a>
+                    <a href="#skills" data-i18n="nav.skills">ทักษะ</a>
+                    <a href="#experience" data-i18n="nav.experience">ประสบการณ์</a>
+                    <a href="#projects" data-i18n="nav.projects">โปรเจกต์</a>
+                    <a href="#contact" data-i18n="nav.contact">ติดต่อ</a>
                 </nav>
                 <div class="footer__social">
                     <a href="https://line.me/ti/p/kGbT_dsTrO" target="_blank" rel="noopener" class="social-link"
                         data-platform="line" aria-label="LINE">
                         <i class="fab fa-line"></i>
                     </a>
-                    <a href="https://github.com/peepothrnpy11-pipo" class="social-link" data-platform="github"
-                        aria-label="GitHub">
+                    <a href="https://github.com/peepothrnpy11-pipo" target="_blank" rel="noopener" class="social-link"
+                        data-platform="github" aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
                 </div>
             </div>
             <div class="footer__bottom">
-                <p>&copy; 2026 <strong>Theeranat Penyai (PIPO)</strong>. Designed &amp; Developed with </i> in Bangkok,
-                    Thailand.</p>
+                <p data-i18n-html="footer.copyright">&copy; 2026 <strong>Theeranat Penyai (PIPO)</strong> · นนทบุรี, ประเทศไทย</p>
             </div>
         </div>
     </footer>
 
     <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">
-        <i class="fas fa-chevron-up"></i>
+    <button type="button" class="back-to-top" id="backToTop" data-i18n-aria="ui.backToTop" aria-label="กลับขึ้นด้านบน">
+        <i class="fas fa-chevron-up" aria-hidden="true"></i>
     </button>
 
     <!-- ===== FORM RESULT POPUP ===== -->
-    <div class="modal" id="formModal" aria-hidden="true">
+    <div class="modal" id="formModal" aria-hidden="true" inert>
         <div class="modal__overlay" data-close></div>
-        <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-            <div class="modal__icon" id="modalIcon"><i class="fas fa-check"></i></div>
-            <h3 class="modal__title" id="modalTitle">ส่งข้อความสำเร็จ!</h3>
-            <p class="modal__text" id="modalText">ขอบคุณค่ะ ฉันจะติดต่อกลับโดยเร็วที่สุด</p>
-            <button class="btn btn--primary modal__btn" data-close>ตกลง</button>
+        <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalText">
+            <div class="modal__icon" id="modalIcon"><i class="fas fa-check" aria-hidden="true"></i></div>
+            <h3 class="modal__title" id="modalTitle" data-i18n="form.success.title">ส่งข้อความสำเร็จ!</h3>
+            <p class="modal__text" id="modalText" data-i18n="form.success.desc">ขอบคุณค่ะ ฉันจะติดต่อกลับโดยเร็วที่สุด</p>
+            <button type="button" class="btn btn--primary modal__btn" data-close data-i18n="form.modal.ok">ตกลง</button>
         </div>
     </div>
 
+    <script src="i18n.js"></script>
     <script src="script.js"></script>
 </body>
 

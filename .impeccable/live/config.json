@@ -1,0 +1,11 @@
+{
+  "files": ["index.html"],
+  "insertBefore": "</body>",
+  "commentSyntax": "html",
+  "framework": "static-html",
+  "devServer": {
+    "port": null,
+    "note": "Static HTML — เปิดด้วย Live Server extension หรือ npx serve . ก็ได้"
+  },
+  "cspChecked": true
+}
