@@ -19,7 +19,7 @@ const I18N = {
 
         'hero.greeting': 'ธีรนาฏ เป็นใย · Frontend & Flutter Developer',
         'hero.description': 'พัฒนาเว็บและแอปที่ใช้งานง่าย ด้วย React, Next.js และ Flutter มุ่งเน้นโค้ดที่อ่านง่าย UI ที่ใช้งานได้จริง และการส่งมอบงานตรงเวลา',
-        'hero.downloadResume': 'ดาวน์โหลด Resume',
+        'hero.viewResume': 'ดู Resume',
         'hero.contact': 'ติดต่อฉัน',
         'hero.featuredLabel': 'โปรเจกต์เด่น',
         'hero.statMonths': 'เดือนประสบการณ์',
@@ -78,12 +78,15 @@ const I18N = {
         'edu1.desc': 'สำเร็จการศึกษาระดับปริญญาตรี สาขาเทคโนโลยีสารสนเทศ มหาวิทยาลัยราชภัฏเชียงใหม่ ระหว่างวันที่ 24 มิถุนายน 2562 - 28 พฤศจิกายน 2566',
 
         'projects.title': 'โปรเจกต์<span>ล่าสุด</span>',
-        'projects.subtitle': '4 โปรเจกต์หลักที่เน้นทักษะ Full-stack และการทำงานจริง',
+        'projects.subtitle': '5 โปรเจกต์หลักที่เน้นทักษะ Full-stack และ Mobile',
         'projects.moreTitle': 'Landing Page เพิ่มเติม',
         'projects.featuredBadge': 'โปรเจกต์เด่น',
         'projects.typeWebApp': 'เว็บแอปพลิเคชัน',
+        'projects.typeMobile': 'แอปมือถือ',
         'projects.typeLanding': 'Landing Page',
         'projects.viewProject': 'ดูโปรเจกต์',
+        'projects.viewWeb': 'ดูเว็บ',
+        'projects.downloadApk': 'ดาวน์โหลด APK',
 
         'proj1.title': 'ระบบจัดการการประชุมออนไลน์ (Meeting App)',
         'proj1.li1': 'จัดการประชุมภายในองค์กร พร้อม QR Code เช็คชื่อและ Export รายงาน',
@@ -101,7 +104,10 @@ const I18N = {
         'proj4.li1': 'โปรเจกต์จบ มรภ.เชียงใหม่ 2566 จัดการแลกเวรและอนุมัติตารางเวร',
         'proj4.li2': 'ระบบสมาชิก สิทธิ์ผู้ใช้/แอดมิน และรายงาน OT',
 
-        'proj5.desc': 'ระบบจองคิวร้านตัดผม ลูกค้าเลือกช่าง บริการ และเวลาได้เอง',
+        'proj5.title': 'QCUT Barber',
+        'proj5.li1': 'แอปจองคิวร้านตัดผมครบวงจร รองรับ 3 บทบาท (ลูกค้า / ช่าง / แอดมิน) พร้อม Login ผ่าน Email และ Google Sign-In จองคิว รีวิว และประวัติการจอง',
+        'proj5.li2': 'Admin Dashboard จัดการช่าง บริการ โปรโมชั่น และแจ้งเตือน Push Notification เมื่อยืนยันคิว / ก่อนถึงเวลานัด',
+
         'proj6.title': 'devdrop คอร์สโปรแกรมมิ่ง &amp; AI',
         'proj6.desc': 'Landing Page แสดงคอร์สและแพ็กเกจ พร้อมฟอร์มรับคำปรึกษาและสลับภาษา EN/TH',
         'proj7.desc': 'Landing Page แบรนด์หุ่นยนต์ พร้อม Hero animation และ Showcase รุ่นสินค้า 2 ภาษา',
@@ -157,7 +163,7 @@ const I18N = {
 
         'hero.greeting': 'Theeranat Penyai · Frontend & Flutter Developer',
         'hero.description': 'I build usable web and mobile products with React, Next.js, and Flutter — readable code, practical UI, and reliable delivery.',
-        'hero.downloadResume': 'Download Resume',
+        'hero.viewResume': 'View Resume',
         'hero.contact': 'Contact me',
         'hero.featuredLabel': 'Featured project',
         'hero.statMonths': 'Months of experience',
@@ -216,12 +222,15 @@ const I18N = {
         'edu1.desc': 'Graduated with a Bachelor\'s in Information Technology from Chiang Mai Rajabhat University (Jun 24, 2019 – Nov 28, 2023).',
 
         'projects.title': 'Latest <span>Projects</span>',
-        'projects.subtitle': 'Four flagship projects showcasing full-stack skills and real-world delivery.',
+        'projects.subtitle': 'Five flagship projects showcasing full-stack and mobile skills.',
         'projects.moreTitle': 'More landing pages',
         'projects.featuredBadge': 'Featured',
         'projects.typeWebApp': 'Web application',
+        'projects.typeMobile': 'Mobile app',
         'projects.typeLanding': 'Landing page',
         'projects.viewProject': 'View project',
+        'projects.viewWeb': 'View website',
+        'projects.downloadApk': 'Download APK',
 
         'proj1.title': 'Online Meeting Management System',
         'proj1.li1': 'Internal meeting management with QR check-in and report export.',
@@ -239,7 +248,10 @@ const I18N = {
         'proj4.li1': 'Graduation project (2023): shift swaps and schedule approval workflows.',
         'proj4.li2': 'Member system, user/admin roles, and OT reporting.',
 
-        'proj5.desc': 'Barbershop queue booking — customers pick stylist, service, and time.',
+        'proj5.title': 'QCUT Barber',
+        'proj5.li1': 'Full barbershop queue booking app with 3 roles (customer / barber / admin), Email & Google Sign-In, booking, reviews, and history.',
+        'proj5.li2': 'Admin dashboard for barbers, services, and promotions — push notifications on confirmation and before appointments.',
+
         'proj6.title': 'devdrop Programming & AI Courses',
         'proj6.desc': 'Course landing page with packages, consultation form, and EN/TH language toggle.',
         'proj7.desc': 'Robotics brand landing page with hero animation and bilingual product showcase.',

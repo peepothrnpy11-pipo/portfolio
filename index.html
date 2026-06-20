@@ -86,8 +86,8 @@
                         มุ่งเน้นโค้ดที่อ่านง่าย UI ที่ใช้งานได้จริง และการส่งมอบงานตรงเวลา
                     </p>
                     <div class="hero__buttons">
-                        <a href="resume.pdf" class="btn btn--primary" download>
-                            <i class="fas fa-download" aria-hidden="true"></i> <span data-i18n="hero.downloadResume">ดาวน์โหลด Resume</span>
+                        <a href="resume.pdf" class="btn btn--primary" target="_blank" rel="noopener">
+                            <i class="fas fa-file-pdf" aria-hidden="true"></i> <span data-i18n="hero.viewResume">ดู Resume</span>
                         </a>
                         <a href="#contact" class="btn btn--outline">
                             <i class="fas fa-envelope" aria-hidden="true"></i> <span data-i18n="hero.contact">ติดต่อฉัน</span>
@@ -513,9 +513,41 @@
             <div class="container">
                 <div class="section-header section-header--wide">
                     <h2 class="section-title" data-i18n-html="projects.title">โปรเจกต์<span>ล่าสุด</span></h2>
-                    <p class="section-subtitle" data-i18n="projects.subtitle">4 โปรเจกต์หลักที่เน้นทักษะ Full-stack และการทำงานจริง</p>
+                    <p class="section-subtitle" data-i18n="projects.subtitle">5 โปรเจกต์หลักที่เน้นทักษะ Full-stack และ Mobile</p>
                 </div>
                 <div class="projects__grid">
+
+                    <article class="project-card project-card--featured">
+                        <div class="project-card__img">
+                            <img src="images/qcut.jpg"
+                                alt="QCUT Barber — barbershop booking app"
+                                loading="lazy" decoding="async">
+                            <span class="project-card__badge" data-i18n="projects.featuredBadge">โปรเจกต์เด่น</span>
+                            <span class="project-card__type" data-i18n="projects.typeMobile">แอปมือถือ</span>
+                            <div class="project-card__overlay">
+                                <div class="project-card__overlay-actions">
+                                    <a href="https://qcut-8ce06.web.app" target="_blank" rel="noopener"
+                                        class="btn btn--white"><span data-i18n="projects.viewWeb">ดูเว็บ</span> <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                                    <a href="images/QCUT-Barber.apk" class="btn btn--white" download>
+                                        <i class="fab fa-android" aria-hidden="true"></i> <span data-i18n="projects.downloadApk">ดาวน์โหลด APK</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title" data-i18n="proj5.title">QCUT Barber</h3>
+                            <ul class="project-card__desc">
+                                <li data-i18n="proj5.li1">แอปจองคิวร้านตัดผมครบวงจร รองรับ 3 บทบาท (ลูกค้า / ช่าง / แอดมิน) พร้อม Login ผ่าน Email และ Google Sign-In จองคิว รีวิว และประวัติการจอง</li>
+                                <li data-i18n="proj5.li2">Admin Dashboard จัดการช่าง บริการ โปรโมชั่น และแจ้งเตือน Push Notification เมื่อยืนยันคิว / ก่อนถึงเวลานัด</li>
+                            </ul>
+                            <div class="project-card__tags">
+                                <span class="tag">Flutter</span>
+                                <span class="tag">Dart</span>
+                                <span class="tag">Firebase</span>
+                                <span class="tag">Riverpod</span>
+                            </div>
+                        </div>
+                    </article>
 
                     <article class="project-card project-card--featured">
                         <div class="project-card__img">
@@ -626,28 +658,6 @@
 
                 <h3 class="projects__more-title" data-i18n="projects.moreTitle">Landing Page เพิ่มเติม</h3>
                 <div class="projects__grid projects__grid--more">
-
-                    <article class="project-card project-card--compact">
-                        <div class="project-card__img">
-                            <img src="images/Screenshot%202026-06-16%20200935.png"
-                                alt="Q-Cut Barbershop Online Booking System"
-                                loading="lazy" decoding="async">
-                            <span class="project-card__type" data-i18n="projects.typeLanding">Landing Page</span>
-                            <div class="project-card__overlay">
-                                <a href="https://qcut-8ce06.firebaseapp.com/" target="_blank" rel="noopener"
-                                    class="btn btn--white"><span data-i18n="projects.viewProject">ดูโปรเจกต์</span> <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                        <div class="project-card__body">
-                            <h3 class="project-card__title">Q-Cut Barbershop</h3>
-                            <p class="project-card__desc project-card__desc--single" data-i18n="proj5.desc">ระบบจองคิวร้านตัดผม ลูกค้าเลือกช่าง บริการ และเวลาได้เอง</p>
-                            <div class="project-card__tags">
-                                <span class="tag">HTML</span>
-                                <span class="tag">CSS</span>
-                                <span class="tag">JavaScript</span>
-                            </div>
-                        </div>
-                    </article>
 
                     <article class="project-card project-card--compact">
                         <div class="project-card__img">

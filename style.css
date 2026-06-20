@@ -926,6 +926,17 @@ button { font-family:var(--font); }
 }
 .project-card:hover .project-card__overlay { opacity:1; }
 
+.project-card__overlay-actions {
+    display:        flex;
+    flex-direction: column;
+    gap:            10px;
+    align-items:    center;
+}
+.project-card__overlay-actions .btn {
+    font-size: .8rem;
+    padding:   10px 18px;
+}
+
 .project-card__type {
     position:      absolute;
     top:           12px;
