@@ -559,26 +559,29 @@
 
                     <article class="project-card project-card--featured">
                         <div class="project-card__img">
-                            <img src="images/Screenshot%202026-06-15%20191521.png"
-                                alt="Online Meeting Management System"
+                            <img src="images/1.png"
+                                alt="Meeting Attendance Management System"
                                 loading="lazy" decoding="async">
                             <span class="project-card__badge" data-i18n="projects.featuredBadge">โปรเจกต์เด่น</span>
                             <span class="project-card__type" data-i18n="projects.typeWebApp">เว็บแอปพลิเคชัน</span>
                             <div class="project-card__overlay">
-                                <a href="https://meeting-app-lake-five.vercel.app/" target="_blank" rel="noopener"
+                                <a href="https://meeting-web-five.vercel.app/" target="_blank" rel="noopener"
                                     class="btn btn--white"><span data-i18n="projects.viewProject">ดูโปรเจกต์</span> <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                             </div>
                         </div>
                         <div class="project-card__body">
-                            <h3 class="project-card__title" data-i18n="proj1.title">ระบบจัดการการประชุมออนไลน์ (Meeting App)</h3>
+                            <h3 class="project-card__title" data-i18n="proj1.title">ระบบจัดการการเข้าร่วมประชุม (Meeting Attendance Management System)</h3>
                             <ul class="project-card__desc">
-                                <li data-i18n="proj1.li1">จัดการประชุมภายในองค์กร พร้อม QR Code เช็คชื่อและ Export รายงาน</li>
-                                <li data-i18n="proj1.li2">ระบบ RBAC, ปฏิทิน, Dashboard และจัดการ OT ครบในแพลตฟอร์มเดียว</li>
+                                <li data-i18n="proj1.li1">พนักงาน check-in ผ่าน QR Code โดยไม่ต้อง login — สแกนลิงก์ /check-in/{token} กรอกรหัสพนักงาน auto-fill ข้อมูล มีช่วงเวลาเปิด–ปิด check-in และ rate limit ป้องกัน spam</li>
+                                <li data-i18n="proj1.li2">Admin Panel ครบ workflow — สร้าง/จัดการประชุม สร้าง QR Token หมุน token ได้ ติดตาม Expected vs Actual แบบ real-time บันทึกการประชุม export PDF แจ้งเตือน Email/LINE และ import รายชื่อจาก Excel</li>
                             </ul>
                             <div class="project-card__tags">
-                                <span class="tag">React + TypeScript</span>
-                                <span class="tag">Node.js</span>
-                                <span class="tag">MySQL</span>
+                                <span class="tag">Next.js</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">PostgreSQL (Supabase)</span>
+                                <span class="tag">Prisma</span>
+                                <span class="tag">Tailwind CSS</span>
+                                <span class="tag">JWT</span>
                             </div>
                         </div>
                     </article>

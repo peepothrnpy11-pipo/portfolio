@@ -88,9 +88,9 @@ const I18N = {
         'projects.viewWeb': 'ดูเว็บ',
         'projects.downloadApk': 'ดาวน์โหลด APK',
 
-        'proj1.title': 'ระบบจัดการการประชุมออนไลน์ (Meeting App)',
-        'proj1.li1': 'จัดการประชุมภายในองค์กร พร้อม QR Code เช็คชื่อและ Export รายงาน',
-        'proj1.li2': 'ระบบ RBAC, ปฏิทิน, Dashboard และจัดการ OT ครบในแพลตฟอร์มเดียว',
+        'proj1.title': 'ระบบจัดการการเข้าร่วมประชุม (Meeting Attendance Management System)',
+        'proj1.li1': 'พนักงาน check-in ผ่าน QR Code โดยไม่ต้อง login — สแกนลิงก์ /check-in/{token} กรอกรหัสพนักงาน auto-fill ข้อมูล มีช่วงเวลาเปิด–ปิด check-in และ rate limit ป้องกัน spam',
+        'proj1.li2': 'Admin Panel ครบ workflow — สร้าง/จัดการประชุม สร้าง QR Token หมุน token ได้ ติดตาม Expected vs Actual แบบ real-time บันทึกการประชุม export PDF แจ้งเตือน Email/LINE และ import รายชื่อจาก Excel',
 
         'proj2.title': 'แพลตฟอร์มจองตั๋ว eSports (NEXUS CHAMPIONSHIP 2025)',
         'proj2.li1': 'จองที่นั่งจากผังจริง อัปโหลดสลิป และรับตั๋ว QR Code พร้อม Hold ที่นั่ง 15 นาที',
@@ -232,9 +232,9 @@ const I18N = {
         'projects.viewWeb': 'View website',
         'projects.downloadApk': 'Download APK',
 
-        'proj1.title': 'Online Meeting Management System',
-        'proj1.li1': 'Internal meeting management with QR check-in and report export.',
-        'proj1.li2': 'RBAC, calendar, dashboard, and OT management in one platform.',
+        'proj1.title': 'Meeting Attendance Management System',
+        'proj1.li1': 'QR check-in without login — scan /check-in/{token}, enter employee ID with auto-fill, time-windowed check-in, and rate limiting against spam.',
+        'proj1.li2': 'Full admin workflow — create/manage meetings, generate and rotate QR tokens, real-time Expected vs Actual tracking, meeting records, PDF export, Email/LINE notifications, and Excel roster import.',
 
         'proj2.title': 'eSports Ticket Booking (NEXUS CHAMPIONSHIP 2025)',
         'proj2.li1': 'Seat booking from live layout, slip upload, QR tickets, and 15-minute seat hold.',
