@@ -40,7 +40,7 @@ const I18N = {
         'about.info.locationValue': 'นนทบุรี, ประเทศไทย',
         'about.info.educationValue': 'IT · มรภ.เชียงใหม่',
         'about.service.webDesc': 'พัฒนาเว็บไซต์ด้วย HTML, CSS, JavaScript, React และ Next.js ให้ใช้งานง่ายและรองรับทุกอุปกรณ์',
-        'about.service.mobileDesc': 'สร้างแอปพลิเคชันมือถือด้วย Flutter (Dart) ใช้งานได้ทั้ง Android และ iOS',
+        'about.service.mobileDesc': 'สร้างแอปพลิเคชันมือถือด้วย Flutter (Dart) ใช้งานได้ทั้ง Android',
 
         'skills.title': 'ทักษะ<span>หลัก</span>',
         'skills.subtitle': 'เทคโนโลยีที่ใช้งานในโปรเจกต์จริง',
@@ -188,7 +188,7 @@ const I18N = {
         'about.info.locationValue': 'Nonthaburi, Thailand',
         'about.info.educationValue': 'IT · CMU Rajabhat',
         'about.service.webDesc': 'Build responsive websites with HTML, CSS, JavaScript, React, and Next.js.',
-        'about.service.mobileDesc': 'Develop cross-platform mobile apps with Flutter (Dart) for Android and iOS.',
+        'about.service.mobileDesc': 'Develop cross-platform mobile apps with Flutter (Dart) for Android.',
 
         'skills.title': 'Core <span>Skills</span>',
         'skills.subtitle': 'Technologies used in real projects',
