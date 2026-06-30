@@ -385,16 +385,6 @@ button { font-family:var(--font); }
 }
 
 /* Text side — entrance sequence */
-.hero__greeting {
-    font-size:   .8rem;
-    font-weight: 600;
-    color:       var(--text-gray);
-    letter-spacing: .02em;
-    text-transform: none;
-    margin-bottom: 12px;
-    display:     block;
-    animation:   hero-up .55s var(--ease-out-quint) 0.05s both;
-}
 .hero__name {
     font-family: var(--font-display);
     font-size:   clamp(2.75rem, 6.5vw, 4.5rem);
@@ -1449,7 +1439,6 @@ ul.timeline__desc li::before {
    ============================================= */
 @media (prefers-reduced-motion: reduce) {
     /* ── Hero entrance sequence: stop + show immediately ── */
-    .hero__greeting,
     .hero__name,
     .hero__title-wrapper,
     .hero__description,

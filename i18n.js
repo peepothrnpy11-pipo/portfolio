@@ -3,7 +3,7 @@
    ============================================= */
 const I18N = {
     th: {
-        'meta.title': 'ธีรนาฏ เป็นใย (PIPO) | Junior Frontend Developer',
+        'meta.title': 'Portfolio',
         'meta.description': 'ธีรนาฏ เป็นใย (ปีโป้) - Junior Frontend & Flutter Developer พัฒนาเว็บไซต์และแอปพลิเคชันด้วย React, Next.js และ Flutter',
 
         'nav.home': 'หน้าแรก',
@@ -13,11 +13,10 @@ const I18N = {
         'nav.projects': 'โปรเจกต์',
         'nav.contact': 'ติดต่อ',
         'nav.resume': 'Resume',
-        'nav.resumeDownload': 'ดาวน์โหลด Resume',
+        'nav.resumeDownload': 'ดู Resume',
         'nav.menuToggle': 'เปิด/ปิดเมนู',
         'nav.langSwitch': 'เลือกภาษา',
 
-        'hero.greeting': 'ธีรนาฏ เป็นใย · Frontend & Flutter Developer',
         'hero.description': 'พัฒนาเว็บและแอปที่ใช้งานง่าย ด้วย React, Next.js และ Flutter มุ่งเน้นโค้ดที่อ่านง่าย UI ที่ใช้งานได้จริง และการส่งมอบงานตรงเวลา',
         'hero.viewResume': 'ดู Resume',
         'hero.contact': 'ติดต่อฉัน',
@@ -28,7 +27,7 @@ const I18N = {
         'hero.titles': ['Front-End Developer', 'Mobile Developer', 'Flutter Developer'],
 
         'about.title': 'เกี่ยวกับ<span>ฉัน</span>',
-        'about.subtitle': 'Junior Frontend & Flutter Developer · มหาวิทยาลัยราชภัฏเชียงใหม่',
+        'about.subtitle': 'Junior Frontend & Flutter Developer',
         'about.role': 'Junior Frontend & Flutter Developer',
         'about.desc1': 'สวัสดีค่ะ! ฉันชื่อ <strong>ธีรนาฏ เป็นใย (ปีโป้)</strong> นักพัฒนา Frontend Developer และ Mobile Development ระดับเริ่มต้น มีพื้นฐานด้าน HTML, CSS และ Dart ชอบสร้างเว็บไซต์และแอปพลิเคชันที่ใช้งานง่ายและตอบโจทย์ผู้ใช้จริง',
         'about.desc2': 'ฉันพร้อมเรียนรู้สิ่งใหม่ ๆ และพัฒนาทักษะอยู่เสมอ ทำงานร่วมกับทีมได้ดี และมุ่งมั่นที่จะเติบโตเป็นนักพัฒนาที่ส่งมอบงานคุณภาพค่ะ',
@@ -151,7 +150,7 @@ const I18N = {
     },
 
     en: {
-        'meta.title': 'Theeranat Penyai (PIPO) | Junior Frontend Developer',
+        'meta.title': 'Portfolio',
         'meta.description': 'Theeranat Penyai (PIPO) — Junior Frontend & Flutter Developer building web apps and mobile apps with React, Next.js, and Flutter.',
 
         'nav.home': 'Home',
@@ -161,11 +160,10 @@ const I18N = {
         'nav.projects': 'Projects',
         'nav.contact': 'Contact',
         'nav.resume': 'Resume',
-        'nav.resumeDownload': 'Download Resume',
+        'nav.resumeDownload': 'View Resume',
         'nav.menuToggle': 'Toggle menu',
         'nav.langSwitch': 'Select language',
 
-        'hero.greeting': 'Theeranat Penyai · Frontend & Flutter Developer',
         'hero.description': 'I build usable web and mobile products with React, Next.js, and Flutter — readable code, practical UI, and reliable delivery.',
         'hero.viewResume': 'View Resume',
         'hero.contact': 'Contact me',
@@ -176,7 +174,7 @@ const I18N = {
         'hero.titles': ['Front-End Developer', 'Mobile Developer', 'Flutter Developer'],
 
         'about.title': 'About <span>Me</span>',
-        'about.subtitle': 'Junior Frontend & Flutter Developer · Chiang Mai Rajabhat University',
+        'about.subtitle': 'Junior Frontend & Flutter Developer',
         'about.role': 'Junior Frontend & Flutter Developer',
         'about.desc1': 'Hi! I\'m <strong>Theeranat Penyai (PIPO)</strong>, a junior Frontend and Mobile developer with a foundation in HTML, CSS, and Dart. I enjoy building websites and apps that are easy to use and solve real user needs.',
         'about.desc2': 'I\'m always learning, collaborate well in teams, and aim to grow into a developer who delivers quality work on time.',
