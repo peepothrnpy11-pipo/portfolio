@@ -59,10 +59,10 @@ const I18N = {
         'exp1.li3': 'ประยุกต์ใช้ AI เป็นเครื่องมือหลัก ในการเขียนโค้ดและเพิ่มประสิทธิภาพการพัฒนา',
 
         'exp2.year': '28 พ.ย. 2566 – 28 ก.พ. 2567',
-        'exp2.role': 'IT Report & Field Test',
+        'exp2.role': 'Report',
         'exp2.org': 'บริษัท NECO (เชียงใหม่)',
         'exp2.li1': 'จัดทำรายงานสรุปผลสัญญาณโทรศัพท์เคลื่อนที่จากการทดสอบภาคสนาม (Field Test)',
-        'exp2.li2': 'ประมวลผลและตรวจสอบข้อมูลผ่านระบบเว็บแอปพลิเคชันภายในบริษัท',
+        'exp2.li2': 'ออกรายงานสัญญาณโทรศัพท์มือถือ',
         'exp2.li3': 'สรุปผลการทดสอบผ่าน Microsoft Excel เพื่อส่งต่อรายงานตามขั้นตอนการดำเนินงานของทีม',
 
         'exp3.year': '30 ต.ค. 2565 – 13 ก.พ. 2566',
@@ -78,9 +78,10 @@ const I18N = {
         'edu1.desc': 'สำเร็จการศึกษาระดับปริญญาตรี สาขาเทคโนโลยีสารสนเทศ มหาวิทยาลัยราชภัฏเชียงใหม่ ระหว่างวันที่ 24 มิถุนายน 2562 - 28 พฤศจิกายน 2566',
 
         'projects.title': 'โปรเจกต์<span>ล่าสุด</span>',
-        'projects.subtitle': '5 โปรเจกต์หลักที่เน้นทักษะ Full-stack และ Mobile',
+        'projects.subtitle': '6 โปรเจกต์หลักที่เน้นทักษะ Full-stack และ Mobile',
         'projects.moreTitle': 'Landing Page เพิ่มเติม',
         'projects.featuredBadge': 'โปรเจกต์เด่น',
+        'projects.graduationBadge': 'โปรเจ็คจบ',
         'projects.typeWebApp': 'เว็บแอปพลิเคชัน',
         'projects.typeMobile': 'แอปมือถือ',
         'projects.typeLanding': 'Landing Page',
@@ -110,7 +111,10 @@ const I18N = {
 
         'proj6.title': 'devdrop คอร์สโปรแกรมมิ่ง &amp; AI',
         'proj6.desc': 'Landing Page แสดงคอร์สและแพ็กเกจ พร้อมฟอร์มรับคำปรึกษาและสลับภาษา EN/TH',
-        'proj7.desc': 'Landing Page แบรนด์หุ่นยนต์ พร้อม Hero animation และ Showcase รุ่นสินค้า 2 ภาษา',
+
+        'proj7.title': 'FastOrder - ระบบสั่งอาหารออนไลน์',
+        'proj7.li1': 'Web App สั่งอาหารและเครื่องดื่มแบบ Guest Checkout ลูกค้าไม่ต้องสมัครสมาชิก รองรับเงินสด โอนผ่าน QR Code และอัปโหลดสลิป',
+        'proj7.li2': 'พัฒนาด้วย Next.js และ TypeScript ใช้ Supabase/SQL สำหรับฐานข้อมูลและ Real-time admin panel พร้อมสถานะ/ETA รายงาน ใบออเดอร์ และระบบสะสมแต้ม',
 
         'contact.title': 'ติดต่อ<span>ฉัน</span>',
         'contact.subtitle': 'พร้อมรับงาน Frontend และ Mobile · ตอบกลับภายใน 24 ชม.',
@@ -203,10 +207,10 @@ const I18N = {
         'exp1.li3': 'Used AI as a core tool for coding and improving development efficiency.',
 
         'exp2.year': 'Nov 28, 2023 – Feb 28, 2024',
-        'exp2.role': 'IT Report & Field Test',
+        'exp2.role': 'Report',
         'exp2.org': 'NECO (Chiang Mai)',
         'exp2.li1': 'Prepared mobile signal field test summary reports.',
-        'exp2.li2': 'Processed and verified data through the company\'s internal web application.',
+        'exp2.li2': 'Prepared mobile phone signal reports.',
         'exp2.li3': 'Summarized test results in Microsoft Excel for team reporting workflows.',
 
         'exp3.year': 'Oct 30, 2022 – Feb 13, 2023',
@@ -222,9 +226,10 @@ const I18N = {
         'edu1.desc': 'Graduated with a Bachelor\'s in Information Technology from Chiang Mai Rajabhat University (Jun 24, 2019 – Nov 28, 2023).',
 
         'projects.title': 'Latest <span>Projects</span>',
-        'projects.subtitle': 'Five flagship projects showcasing full-stack and mobile skills.',
+        'projects.subtitle': 'Six flagship projects showcasing full-stack and mobile skills.',
         'projects.moreTitle': 'More landing pages',
         'projects.featuredBadge': 'Featured',
+        'projects.graduationBadge': 'Graduation project',
         'projects.typeWebApp': 'Web application',
         'projects.typeMobile': 'Mobile app',
         'projects.typeLanding': 'Landing page',
@@ -254,7 +259,10 @@ const I18N = {
 
         'proj6.title': 'devdrop Programming & AI Courses',
         'proj6.desc': 'Course landing page with packages, consultation form, and EN/TH language toggle.',
-        'proj7.desc': 'Robotics brand landing page with hero animation and bilingual product showcase.',
+
+        'proj7.title': 'FastOrder - Online Food Ordering System',
+        'proj7.li1': 'A food and drink ordering web app with guest checkout, so customers can order without registration. Supports cash, QR transfer, and slip upload.',
+        'proj7.li2': 'Built with Next.js and TypeScript, using Supabase/SQL for the database and real-time admin panel with status/ETA, reports, receipts, and loyalty rewards.',
 
         'contact.title': 'Contact <span>Me</span>',
         'contact.subtitle': 'Open to Frontend & Mobile work · Replies within 24 hours',
