@@ -4,7 +4,7 @@
 const I18N = {
     th: {
         'meta.title': 'Portfolio',
-        'meta.description': 'ธีรนาฏ เป็นใย (ปีโป้) - Junior Frontend & Flutter Developer พัฒนาเว็บไซต์และแอปพลิเคชันด้วย React, Next.js และ Flutter',
+        'meta.description': 'ธีรนาฏ เป็นใย (ปีโป้) - Junior Web Developer & Flutter Developer พัฒนาเว็บไซต์และแอปพลิเคชันด้วย React, Next.js และ Flutter',
 
         'nav.home': 'หน้าแรก',
         'nav.about': 'เกี่ยวกับ',
@@ -24,12 +24,12 @@ const I18N = {
         'hero.statMonths': 'เดือนประสบการณ์',
         'hero.statProjects': 'โปรเจกต์',
         'hero.statTech': 'เทคโนโลยี',
-        'hero.titles': ['Front-End Developer', 'Mobile Developer', 'Flutter Developer'],
+        'hero.titles': ['Junior Web Developer & Flutter Developer'],
 
         'about.title': 'เกี่ยวกับ<span>ฉัน</span>',
-        'about.subtitle': 'Junior Frontend & Flutter Developer',
-        'about.role': 'Junior Frontend & Flutter Developer',
-        'about.desc1': 'สวัสดีค่ะ! ฉันชื่อ <strong>ธีรนาฏ เป็นใย (ปีโป้)</strong> นักพัฒนา Frontend Developer และ Mobile Development ระดับเริ่มต้น มีพื้นฐานด้าน HTML, CSS และ Dart ชอบสร้างเว็บไซต์และแอปพลิเคชันที่ใช้งานง่ายและตอบโจทย์ผู้ใช้จริง',
+        'about.subtitle': 'Junior Web Developer & Flutter Developer',
+        'about.role': 'Junior Web Developer & Flutter Developer',
+        'about.desc1': 'สวัสดีค่ะ! ฉันชื่อ <strong>ธีรนาฏ เป็นใย (ปีโป้)</strong> Junior Web Developer & Flutter Developer ระดับเริ่มต้น มีพื้นฐานด้าน HTML, CSS และ Dart ชอบสร้างเว็บไซต์และแอปพลิเคชันที่ใช้งานง่ายและตอบโจทย์ผู้ใช้จริง',
         'about.desc2': 'ฉันพร้อมเรียนรู้สิ่งใหม่ ๆ และพัฒนาทักษะอยู่เสมอ ทำงานร่วมกับทีมได้ดี และมุ่งมั่นที่จะเติบโตเป็นนักพัฒนาที่ส่งมอบงานคุณภาพค่ะ',
         'about.info.nickname': 'ชื่อเล่น',
         'about.info.location': 'ที่อยู่',
@@ -67,7 +67,7 @@ const I18N = {
         'exp3.year': '30 ต.ค. 2565 – 13 ก.พ. 2566',
         'exp3.role': 'Programmer & IT Support',
         'exp3.org': 'สถาบันพัฒนาการเด็กราชนครินทร์ เชียงใหม่',
-        'exp3.li1': 'พัฒนาและดูแลส่วนหน้า (Frontend) ของระบบบริหารจัดการโรงพยาบาลด้วย React.js',
+        'exp3.li1': 'พัฒนาและดูแลส่วนหน้า (Develop) ของระบบบริหารจัดการโรงพยาบาลด้วย React.js',
         'exp3.li2': 'ออกแบบ UI และพัฒนาโมบายแอปพลิเคชัน (E-commerce & News) ด้วย Flutter',
         'exp3.li3': 'รับผิดชอบงาน IT Support แก้ไขปัญหาทางเทคนิคและบำรุงรักษาอุปกรณ์คอมพิวเตอร์ภายในองค์กร',
 
@@ -78,12 +78,10 @@ const I18N = {
 
         'projects.title': 'โปรเจกต์<span>ล่าสุด</span>',
         'projects.subtitle': '6 โปรเจกต์หลักที่เน้นทักษะ Full-stack และ Mobile',
-        'projects.moreTitle': 'Landing Page เพิ่มเติม',
         'projects.featuredBadge': 'โปรเจกต์เด่น',
         'projects.graduationBadge': 'โปรเจ็คจบ',
         'projects.typeWebApp': 'เว็บแอปพลิเคชัน',
         'projects.typeMobile': 'แอปมือถือ',
-        'projects.typeLanding': 'Landing Page',
         'projects.viewProject': 'ดูโปรเจกต์',
         'projects.viewWeb': 'ดูเว็บ',
         'projects.downloadApk': 'ดาวน์โหลด APK',
@@ -108,15 +106,12 @@ const I18N = {
         'proj5.li1': 'แอปจองคิวร้านตัดผมครบวงจร รองรับ 3 บทบาท (ลูกค้า / ช่าง / แอดมิน) พร้อม Login ผ่าน Email และ Google Sign-In จองคิว รีวิว และประวัติการจอง',
         'proj5.li2': 'Admin Dashboard จัดการช่าง บริการ โปรโมชั่น และแจ้งเตือน Push Notification เมื่อยืนยันคิว / ก่อนถึงเวลานัด',
 
-        'proj6.title': 'devdrop คอร์สโปรแกรมมิ่ง &amp; AI',
-        'proj6.desc': 'Landing Page แสดงคอร์สและแพ็กเกจ พร้อมฟอร์มรับคำปรึกษาและสลับภาษา EN/TH',
-
         'proj7.title': 'FastOrder - ระบบสั่งอาหารออนไลน์',
         'proj7.li1': 'Web App สั่งอาหารและเครื่องดื่มแบบ Guest Checkout ลูกค้าไม่ต้องสมัครสมาชิก รองรับเงินสด โอนผ่าน QR Code และอัปโหลดสลิป',
         'proj7.li2': 'พัฒนาด้วย Next.js และ TypeScript ใช้ Supabase/SQL สำหรับฐานข้อมูลและ Real-time admin panel พร้อมสถานะ/ETA รายงาน ใบออเดอร์ และระบบสะสมแต้ม',
 
         'contact.title': 'ติดต่อ<span>ฉัน</span>',
-        'contact.subtitle': 'พร้อมรับงาน Frontend และ Mobile · ตอบกลับภายใน 24 ชม.',
+        'contact.subtitle': 'พร้อมรับงาน Develop และ Mobile · ตอบกลับภายใน 24 ชม.',
         'contact.heading': 'มาร่วมงานกัน!',
         'contact.desc': 'หากคุณมีโปรเจกต์ที่น่าสนใจหรืออยากร่วมงานกัน ฉันยินดีรับฟังเสมอค่ะ ส่งข้อความมาหาได้เลย!',
         'contact.social': 'ช่องทางติดต่อ',
@@ -143,7 +138,7 @@ const I18N = {
         'form.success.desc': 'ขอบคุณค่ะ ฉันจะติดต่อกลับโดยเร็วที่สุด',
         'form.modal.ok': 'ตกลง',
 
-        'footer.tagline': 'Junior Frontend & Flutter Developer · นนทบุรี, ประเทศไทย',
+        'footer.tagline': 'Junior Web Developer & Flutter Developer · นนทบุรี, ประเทศไทย',
         'footer.copyright': '&copy; 2026 <strong>Theeranat Penyai (PIPO)</strong> · นนทบุรี, ประเทศไทย',
 
         'ui.backToTop': 'กลับขึ้นด้านบน'
@@ -151,7 +146,7 @@ const I18N = {
 
     en: {
         'meta.title': 'Portfolio',
-        'meta.description': 'Theeranat Penyai (PIPO) — Junior Frontend & Flutter Developer building web apps and mobile apps with React, Next.js, and Flutter.',
+        'meta.description': 'Theeranat Penyai (PIPO) — Junior Web Developer & Flutter Developer building web apps and mobile apps with React, Next.js, and Flutter.',
 
         'nav.home': 'Home',
         'nav.about': 'About',
@@ -171,12 +166,12 @@ const I18N = {
         'hero.statMonths': 'Months of experience',
         'hero.statProjects': 'Projects',
         'hero.statTech': 'Technologies',
-        'hero.titles': ['Front-End Developer', 'Mobile Developer', 'Flutter Developer'],
+        'hero.titles': ['Junior Web Developer & Flutter Developer'],
 
         'about.title': 'About <span>Me</span>',
-        'about.subtitle': 'Junior Frontend & Flutter Developer',
-        'about.role': 'Junior Frontend & Flutter Developer',
-        'about.desc1': 'Hi! I\'m <strong>Theeranat Penyai (PIPO)</strong>, a junior Frontend and Mobile developer with a foundation in HTML, CSS, and Dart. I enjoy building websites and apps that are easy to use and solve real user needs.',
+        'about.subtitle': 'Junior Web Developer & Flutter Developer',
+        'about.role': 'Junior Web Developer & Flutter Developer',
+        'about.desc1': 'Hi! I\'m <strong>Theeranat Penyai (PIPO)</strong>, a junior Develop and Mobile developer with a foundation in HTML, CSS, and Dart. I enjoy building websites and apps that are easy to use and solve real user needs.',
         'about.desc2': 'I\'m always learning, collaborate well in teams, and aim to grow into a developer who delivers quality work on time.',
         'about.info.nickname': 'Nickname',
         'about.info.location': 'Location',
@@ -225,12 +220,10 @@ const I18N = {
 
         'projects.title': 'Latest <span>Projects</span>',
         'projects.subtitle': 'Six flagship projects showcasing full-stack and mobile skills.',
-        'projects.moreTitle': 'More landing pages',
         'projects.featuredBadge': 'Featured',
         'projects.graduationBadge': 'Graduation project',
         'projects.typeWebApp': 'Web application',
         'projects.typeMobile': 'Mobile app',
-        'projects.typeLanding': 'Landing page',
         'projects.viewProject': 'View project',
         'projects.viewWeb': 'View website',
         'projects.downloadApk': 'Download APK',
@@ -255,15 +248,12 @@ const I18N = {
         'proj5.li1': 'Full barbershop queue booking app with 3 roles (customer / barber / admin), Email & Google Sign-In, booking, reviews, and history.',
         'proj5.li2': 'Admin dashboard for barbers, services, and promotions — push notifications on confirmation and before appointments.',
 
-        'proj6.title': 'devdrop Programming & AI Courses',
-        'proj6.desc': 'Course landing page with packages, consultation form, and EN/TH language toggle.',
-
         'proj7.title': 'FastOrder - Online Food Ordering System',
         'proj7.li1': 'A food and drink ordering web app with guest checkout, so customers can order without registration. Supports cash, QR transfer, and slip upload.',
         'proj7.li2': 'Built with Next.js and TypeScript, using Supabase/SQL for the database and real-time admin panel with status/ETA, reports, receipts, and loyalty rewards.',
 
         'contact.title': 'Contact <span>Me</span>',
-        'contact.subtitle': 'Open to Frontend & Mobile work · Replies within 24 hours',
+        'contact.subtitle': 'Open to Develop & Mobile work · Replies within 24 hours',
         'contact.heading': 'Let\'s work together',
         'contact.desc': 'Have an interesting project or want to collaborate? I\'d love to hear from you — send a message anytime.',
         'contact.social': 'Connect',
@@ -290,7 +280,7 @@ const I18N = {
         'form.success.desc': 'Thank you — I\'ll get back to you as soon as possible.',
         'form.modal.ok': 'OK',
 
-        'footer.tagline': 'Junior Frontend & Flutter Developer · Nonthaburi, Thailand',
+        'footer.tagline': 'Junior Web Developer & Flutter Developer · Nonthaburi, Thailand',
         'footer.copyright': '&copy; 2026 <strong>Theeranat Penyai (PIPO)</strong> · Nonthaburi, Thailand',
 
         'ui.backToTop': 'Back to top'

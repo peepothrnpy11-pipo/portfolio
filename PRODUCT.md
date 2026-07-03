@@ -14,7 +14,7 @@ brand
 
 ## Product Purpose
 
-Portfolio ส่วนตัวของ **ธีรนาฏ เป็นใย (PIPO)** Junior Frontend Developer และ Mobile Developer (Flutter) — เพื่อหางานในบริษัท IT ไทยกลุ่ม startup และ digital agency
+Portfolio ส่วนตัวของ **ธีรนาฏ เป็นใย (PIPO)** Junior Web Developer & Flutter Developer — เพื่อหางานในบริษัท IT ไทยกลุ่ม startup และ digital agency
 
 ความสำเร็จคือ: ผู้เยี่ยมชมดาวน์โหลด resume หรือกดติดต่อภายใน 30 วินาที และ tech lead เชื่อมั่นในทักษะจาก portfolio โปรเจกต์จริง
 

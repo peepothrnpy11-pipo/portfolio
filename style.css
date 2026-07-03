@@ -1004,24 +1004,6 @@ ul.timeline__desc li::before {
     border-radius: 999px;
     letter-spacing:.3px;
 }
-.projects__more-title {
-    font-family:  var(--font-display);
-    font-size:    1.1rem;
-    font-weight:  700;
-    color:        var(--text-dark);
-    margin:       56px 0 24px;
-    padding-top:  32px;
-    border-top:   1px solid var(--border);
-    text-align:   left;
-}
-.projects__grid--more { margin-top: 0; }
-.project-card--compact .project-card__body { padding: 18px 20px; }
-.project-card__desc--single {
-    font-size:     .84rem;
-    color:         var(--text-gray);
-    line-height:   1.55;
-    margin-bottom: 14px;
-}
 .contact__title { font-family: var(--font-display); }
 .about__subtitle { font-family: var(--font-display); }
 .project-card__title { font-family: var(--font-display); }

@@ -800,7 +800,7 @@
         <div class="hero-copy reveal">
           <span class="eyebrow">Resume Landing Page</span>
           <h1 class="hero-title">Narin <span>Chaiyakul</span></h1>
-          <div class="role">Frontend Developer / UI Designer</div>
+          <div class="role">Junior Web Developer &amp; Flutter Developer</div>
           <p>
             I design and build polished web experiences with thoughtful interfaces,
             clean code, and a strong focus on performance, accessibility, and user goals.
@@ -962,7 +962,7 @@
             <span class="timeline-dot" aria-hidden="true"></span>
             <div class="timeline-card">
               <span class="year">2024 - Present</span>
-              <h3>Frontend Developer</h3>
+              <h3>Junior Web Developer &amp; Flutter Developer</h3>
               <div class="company">Bright Labs Studio</div>
               <p>Build responsive web applications, design reusable UI patterns, and improve frontend performance for client platforms.</p>
             </div>
